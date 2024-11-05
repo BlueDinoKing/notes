@@ -1,0 +1,64 @@
+\contentsline {chapter}{\numberline {1}Basic Concepts}{4}{}%
+\contentsline {section}{\numberline {1.1}SI Units}{4}{}%
+\contentsline {section}{\numberline {1.2}CGS Units}{4}{}%
+\contentsline {section}{\numberline {1.3}Electric Charge}{4}{}%
+\contentsline {section}{\numberline {1.4}Current}{5}{}%
+\contentsline {section}{\numberline {1.5}Voltage}{5}{}%
+\contentsline {section}{\numberline {1.6}Power and Energy}{5}{}%
+\contentsline {subsection}{\numberline {1.6.1}Power}{5}{}%
+\contentsline {subsection}{\numberline {1.6.2}Energy}{5}{}%
+\contentsline {section}{\numberline {1.7}Circuit Elements}{5}{}%
+\contentsline {subsection}{\numberline {1.7.1}Resistor}{6}{}%
+\contentsline {subsection}{\numberline {1.7.2}Capacitor}{6}{}%
+\contentsline {subsection}{\numberline {1.7.3}Inductor}{6}{}%
+\contentsline {chapter}{\numberline {2}Basic Laws}{7}{}%
+\contentsline {section}{\numberline {2.1}Ohm's Law}{7}{}%
+\contentsline {section}{\numberline {2.2}Nodes, Branches, and Loops}{7}{}%
+\contentsline {section}{\numberline {2.3}Kirchhoff's Laws}{7}{}%
+\contentsline {subsection}{\numberline {2.3.1}Kirchhoff's Current Law (KCL)}{7}{}%
+\contentsline {subsection}{\numberline {2.3.2}Kirchhoff's Voltage Law (KVL)}{7}{}%
+\contentsline {section}{\numberline {2.4}Series Resistors and Voltage Division}{7}{}%
+\contentsline {section}{\numberline {2.5}Parallel Resistors and Current Division}{8}{}%
+\contentsline {section}{\numberline {2.6}Wye-Delta Transformations}{8}{}%
+\contentsline {chapter}{\numberline {3}Methods of Analysis}{9}{}%
+\contentsline {section}{\numberline {3.1}Nodal Analysis}{9}{}%
+\contentsline {subsection}{\numberline {3.1.1}Nodal Analysis with Voltage Sources}{9}{}%
+\contentsline {section}{\numberline {3.2}Mesh Analysis}{9}{}%
+\contentsline {subsection}{\numberline {3.2.1}Mesh Analysis with Current Sources}{10}{}%
+\contentsline {section}{\numberline {3.3}Nodal and Mesh Analyses by Inspection}{10}{}%
+\contentsline {section}{\numberline {3.4}Nodal versus Mesh Analysis}{10}{}%
+\contentsline {chapter}{\numberline {4}Circuit Theorems}{11}{}%
+\contentsline {section}{\numberline {4.1}Linearity Property}{11}{}%
+\contentsline {subsection}{\numberline {4.1.1}Implications of Linearity}{11}{}%
+\contentsline {section}{\numberline {4.2}Superposition}{11}{}%
+\contentsline {subsection}{\numberline {4.2.1}Procedure for Superposition}{11}{}%
+\contentsline {section}{\numberline {4.3}Source Transformation}{12}{}%
+\contentsline {subsection}{\numberline {4.3.1}Transformation Equations}{12}{}%
+\contentsline {section}{\numberline {4.4}Thevenin's Theorem}{12}{}%
+\contentsline {subsection}{\numberline {4.4.1}Determining Thevenin's Equivalent}{12}{}%
+\contentsline {section}{\numberline {4.5}Norton's Theorem}{12}{}%
+\contentsline {subsection}{\numberline {4.5.1}Determining Norton's Equivalent}{12}{}%
+\contentsline {section}{\numberline {4.6}Derivations of Thevenin's and Norton's Theorems}{13}{}%
+\contentsline {section}{\numberline {4.7}Maximum Power Transfer Theorem}{13}{}%
+\contentsline {subsection}{\numberline {4.7.1}Derivation of Maximum Power Transfer}{13}{}%
+\contentsline {chapter}{\numberline {5}Operational Amplifiers}{14}{}%
+\contentsline {section}{\numberline {5.1}Ideal Op-Amp}{14}{}%
+\contentsline {section}{\numberline {5.2}Inverting Amplifier}{14}{}%
+\contentsline {section}{\numberline {5.3}Noninverting Amplifier}{14}{}%
+\contentsline {section}{\numberline {5.4}Summing Amplifier}{15}{}%
+\contentsline {section}{\numberline {5.5}Difference Amplifier}{15}{}%
+\contentsline {section}{\numberline {5.6}Cascaded Op-Amp Circuits}{15}{}%
+\contentsline {chapter}{\numberline {6}Capacitors and Inductors}{16}{}%
+\contentsline {section}{\numberline {6.1}Capacitors}{16}{}%
+\contentsline {subsection}{\numberline {6.1.1}Capacitance}{16}{}%
+\contentsline {subsection}{\numberline {6.1.2}Types of Capacitors}{16}{}%
+\contentsline {section}{\numberline {6.2}Series and Parallel Capacitors}{16}{}%
+\contentsline {subsection}{\numberline {6.2.1}Series Capacitors}{16}{}%
+\contentsline {subsection}{\numberline {6.2.2}Parallel Capacitors}{17}{}%
+\contentsline {section}{\numberline {6.3}Inductors}{17}{}%
+\contentsline {subsection}{\numberline {6.3.1}Inductance}{17}{}%
+\contentsline {subsection}{\numberline {6.3.2}Types of Inductors}{17}{}%
+\contentsline {section}{\numberline {6.4}Series and Parallel Inductors}{17}{}%
+\contentsline {subsection}{\numberline {6.4.1}Series Inductors}{17}{}%
+\contentsline {subsection}{\numberline {6.4.2}Parallel Inductors}{17}{}%
+\contentsline {section}{\numberline {6.5}Conclusion}{18}{}%

@@ -1,0 +1,153 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Exam II}
+\author{Silas Kinnear \textbf{EE 220}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+This guide provides an introduction to fundamental circuit analysis techniques. Each topic is explained from the ground up, assuming little prior knowledge. The goal is to make concepts like the \textbf{Superposition Theorem}, \textbf{Thevenin's Theorem}, \textbf{Equivalent Capacitance}, \textbf{Equivalent Inductance}, and \textbf{Energy Storage in Inductors and Capacitors} understandable, practical, and approachable.
+
+\section{Superposition Theorem}
+
+\subsection{What is the Superposition Theorem?}
+The Superposition Theorem is a tool that allows us to simplify circuits that have multiple sources of power, like batteries or current sources. Instead of calculating everything at once, we look at each power source on its own and add up the results.
+
+\subsection{Why Use Superposition?}
+Imagine trying to find the voltage across a resistor with two batteries in the circuit. If we calculate each battery’s effect individually, we can avoid complicated equations and focus on smaller, more manageable parts of the circuit.
+
+\subsection{How to Apply the Superposition Theorem}
+\begin{enumerate}
+    \item \textbf{Identify all power sources:} Look at the circuit and list each independent source of voltage or current. Independent sources are components that supply power on their own, such as batteries or current sources.
+    \item \textbf{Turn off all sources except one:} 
+    \begin{itemize}
+        \item To “turn off” a voltage source, replace it with a wire (called a short circuit).
+        \item To “turn off” a current source, imagine it’s an open gap (called an open circuit).
+    \end{itemize}
+    \item \textbf{Analyze the circuit:} With only one source on, calculate the effect on the target component (e.g., the voltage across a resistor).
+    \item \textbf{Repeat for each source:} Do the same steps for each power source, one at a time.
+    \item \textbf{Add the effects together:} The total effect is the sum of the individual effects.
+\end{enumerate}
+
+\subsection{Example: Finding Voltage Across a Resistor}
+Suppose we have two voltage sources, \( V_1 = 10 \, \text{V} \) and \( V_2 = 5 \, \text{V} \), connected to a circuit with resistors \( R_1 \) and \( R_2 \). We want to find the voltage across \( R_2 \):
+\begin{itemize}
+    \item Turn off \( V_2 \): Replace it with a wire. Calculate the effect of \( V_1 \) on \( R_2 \).
+    \item Turn off \( V_1 \): Replace it with a wire. Calculate the effect of \( V_2 \) on \( R_2 \).
+    \item Add the two results to find the total voltage across \( R_2 \).
+\end{itemize}
+
+\subsection{Summary}
+The Superposition Theorem breaks down complex circuits by isolating the effects of each power source, making calculations simpler.
+
+\newpage
+\section{Thevenin's Theorem}
+
+\subsection{What is Thevenin's Theorem?}
+Thevenin's Theorem is a method that allows us to replace a complicated part of a circuit with a single voltage source and a single resistor. This simplifies the circuit and makes it easier to analyze, especially if we want to study how the circuit behaves when we change the load (the component we’re focused on).
+
+\subsection{Steps to Apply Thevenin's Theorem}
+\begin{enumerate}
+    \item \textbf{Identify the two points:} Find the terminals where you want to simplify the circuit.
+    \item \textbf{Calculate \( V_{\text{th}} \):} This is the Thevenin Voltage. It represents the open-circuit voltage between the two terminals:
+    \begin{itemize}
+        \item Remove the load resistor (if any) at the terminals.
+        \item Calculate the voltage across the terminals without the load resistor.
+    \end{itemize}
+    \item \textbf{Calculate \( R_{\text{th}} \):} This is the Thevenin Resistance, the resistance seen from the terminals:
+    \begin{itemize}
+        \item Turn off all independent sources (replace voltage sources with wires and current sources with gaps).
+        \item Find the total resistance seen across the terminals.
+    \end{itemize}
+    \item \textbf{Draw the Thevenin Equivalent Circuit:} Replace the original circuit with \( V_{\text{th}} \) in series with \( R_{\text{th}} \), and reconnect the load resistor.
+\end{enumerate}
+
+\subsection{Example: Simplifying a Circuit}
+Suppose we have a voltage source \( V = 10 \, \text{V} \) with resistors \( R_1 = 5 \, \Omega \) and \( R_2 = 10 \, \Omega \) in a circuit. We want to find the equivalent circuit for the terminals across \( R_2 \).
+\begin{itemize}
+    \item Calculate \( V_{\text{th}} \): Find the voltage across \( R_2 \) with no load.
+    \item Calculate \( R_{\text{th}} \): Replace \( V \) with a wire and find the resistance across the terminals.
+\end{itemize}
+
+\subsection{Summary}
+Thevenin's Theorem allows us to replace a complex part of a circuit with a simple equivalent that has the same effect on the load.
+
+\newpage
+\section{Equivalent Capacitance of Capacitors}
+
+\subsection{Capacitors in Parallel}
+When capacitors are connected side-by-side (in parallel), they add up directly:
+\[
+C_{\text{eq}} = C_1 + C_2 + C_3 + C_4
+\]
+This is because capacitors in parallel increase the area for charge storage, just like combining multiple containers for holding more liquid.
+
+\subsection{Capacitors in Series}
+When capacitors are connected end-to-end (in series), they add inversely:
+\[
+\frac{1}{C_{\text{eq}}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \frac{1}{C_4}
+\]
+In this case, capacitors in series reduce the total capacitance because the voltage has to split across each capacitor.
+
+\subsection{Summary}
+For capacitors, parallel configurations increase total capacitance, while series configurations decrease it.
+
+\newpage
+\section{Equivalent Inductance of Inductors}
+
+\subsection{Inductors in Series}
+When inductors are connected end-to-end (in series), they add directly:
+\[
+L_{\text{eq}} = L_1 + L_2 + L_3 + L_4
+\]
+This is because inductors in series increase the overall length of the wire coil, adding to the magnetic field.
+
+\subsection{Inductors in Parallel}
+When inductors are connected side-by-side (in parallel), they add inversely:
+\[
+\frac{1}{L_{\text{eq}}} = \frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} + \frac{1}{L_4}
+\]
+In parallel, inductors create alternative paths for the magnetic field, reducing the total inductance.
+
+\subsection{Summary}
+For inductors, series configurations increase total inductance, while parallel configurations decrease it.
+
+\newpage
+\section{Energy Stored in Inductors and Capacitors}
+
+\subsection{Energy Stored in an Inductor}
+Inductors store energy in their magnetic fields. If an inductor with inductance \( L \) has a current \( I \) flowing through it, the energy stored is:
+\[
+W_L = \frac{1}{2} L I^2
+\]
+This energy depends on the current and the inductance; higher values of both mean more energy is stored.
+
+\subsection{Energy Stored in a Capacitor}
+Capacitors store energy in their electric fields. If a capacitor with capacitance \( C \) has a voltage \( V \) across it, the energy stored is:
+\[
+W_C = \frac{1}{2} C V^2
+\]
+The energy stored depends on the voltage across the capacitor and its capacitance.
+
+\subsection{Summary}
+Inductors and capacitors store energy in different forms, which is useful in circuits where energy needs to be temporarily held and then released.
+
+\newpage
+\section{Overall Summary}
+\begin{itemize}
+    \item \textbf{Superposition Theorem:} Breaks down circuits with multiple sources by analyzing each one individually.
+    \item \textbf{Thevenin's Theorem:} Replaces complex parts of a circuit with a simple voltage source and resistor, making analysis easier.
+    \item \textbf{Capacitors and Inductors:} Calculate equivalent capacitance or inductance by understanding whether they’re in series or parallel.
+    \item \textbf{Energy Storage:} Inductors and capacitors store energy in their magnetic and electric fields, respectively.
+\end{itemize}
+These foundational tools are essential for understanding and analyzing electrical circuits, making them manageable and easier to calculate.
+
+\end{document}
