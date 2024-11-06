@@ -203,6 +203,18 @@ A sphere centered at \(P(p, q, s)\) with radius \( r \) has the equation:
     (x - p)^2 + (y - q)^2 + (z - s)^2 = r^2
 \end{equation}
 
+\subsection{Equation of a Circle}
+\begin{equation}
+    (x-h)^2 + (y-k)^2 = r^2
+\end{equation}
+
+\subsection{General Quadratic Equation with two unknowns}
+\begin{equation}
+    Ax^2 + By^2 + Cxy + Dx + Ey + F = 0
+\end{equation}
+\[
+    A^2 + B^2 + C^2 \neq 0, \quad A, B, C, D, E, F \in \R
+\]
 \subsection{Equation of an Ellipsoid}
 
 An ellipsoid centered at \(P(h, k, l)\) is given by:
@@ -211,6 +223,20 @@ An ellipsoid centered at \(P(h, k, l)\) is given by:
     \dfrac{(x-h)^2}{a^2} +  
     \dfrac{(y-k)^2}{b^2} + 
     \dfrac{(z-l)^2}{c^2} = 1
+\end{equation}
+
+\subsection{Equation of an Ellipse}
+\begin{equation}
+    \dfrac{(x-h)^2}{a^2} + \dfrac{(y-k)^2}{b^2} = 1
+\end{equation}
+
+\subsection{Equation of a Hyperbola}
+\begin{equation}
+    \dfrac{(x-h)^2}{a^2} - \dfrac{(y-k)^2}{b^2} = 1
+\end{equation}
+\subsection{Equation of a Parabola}
+\begin{equation}
+    (y-k)^2 = 4p(x-h)
 \end{equation}
 
 \subsection{Equations of a Line}
@@ -236,6 +262,61 @@ An ellipsoid centered at \(P(h, k, l)\) is given by:
 \begin{equation}
     a(x-x_0) + b(y-y_0) + c(z-z_0) = 0
 \end{equation}
+
+\section{Quadric Surfaces}
+
+\subsection{Ellipsoid}
+\begin{equation}
+    \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} + \dfrac{z^2}{c^2} = 1
+\end{equation}
+
+\subsection{Hyperboloid of One Sheet}
+\begin{equation}
+    \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} - \dfrac{z^2}{c^2} = 1
+\end{equation}
+
+\subsection{Hyperboloid of Two Sheets}
+\begin{equation}
+    -\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} + \dfrac{z^2}{c^2} = 1
+\end{equation}
+
+\subsection{Elliptic Cone}
+\begin{equation}
+    \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} - \dfrac{z^2}{c^2} = 0
+\end{equation}
+
+\subsection{Elliptic Paraboloid}
+\begin{equation}
+    \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = z
+\end{equation}
+
+\subsection{Hyperbolic Paraboloid}
+\begin{equation}
+    \dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = z
+\end{equation}
+
+\subsection{Describing Quadric Surfaces}
+To describe a quadric surface, you need to know the cross sections of the surface with the coordinate planes. For example, the cross sections of an ellipsoid with the coordinate planes are ellipses.
+\subsubsection{Example}
+Given the equation \(x^2 + 4y^2 + 9z^2 = 36\), the cross sections with the coordinate planes are:
+\begin{itemize}
+    \item{\(z = 0\): Ellipse with major axis 6 and minor axis 2 given by the equation:}
+    \[
+        x^2 + 4y^2 = 36-9z^2
+    \]
+    \item{\(y = 0\): Ellipse with major axis 6 and minor axis 3 given by the equation:}
+    \[
+        x^2 + 9z^2 = 36-4y^2
+    \]
+    \item{\(x = 0\): Ellipse with major axis 4 and minor axis 3}
+    \[
+        4y^2 + 9z^2 = 36-x^2
+    \]
+\end{itemize}
+Since all cross sections are ellipses, the surface is an ellipsoid.
+
+Description: This is an ellipsoid centered at the origin with semi-axes of length 6, 3, and 2 along the x, y, and z-axes, respectively.
+
 \section{Graphing Concepts}
 
 Graphing helps visualize functions and equations by showing the set of all points that satisfy them.
@@ -358,11 +439,46 @@ Differentials are different than derivatives, as they are the change in the func
 \[
 d(\arctan(u)) = \dfrac{du}{1+u^2}\text{ but }\arctan(u') = \dfrac{u'}{1+u^2}
 \]
+
+\subsubsection{Error Estimation}
+The error in a function \(f(x)\) can be estimated by the differential:
+\[
+    df = f'(x)dx
+\]
+This is useful for approximating the error in a function given a small change in the variable.
+
+\subsubsection{Example of Error Estimation}
+Given the equation $A = lw$, $l = 5m$, $w = 3m$, $dl = 0.001m$, and $dw = 0.001m$, find the error in the area ($dA$): 
+\begin{align*}
+    A &= lw\\
+    dA &= wdl + ldw\\
+    dA &= (3)(0.001) + (5)(0.001)\\
+    dA &= 0.008m^2
+\end{align*}
 \subsection{Derivatives}
 
 \[
     f(x) \text{is differentiable iff } \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h} \text{ exists}
 \]
+\subsubsection{Linearization}
+The linearization of a function \(f(x)\) at a point \(x_0\) is given by:
+\[
+    L(x) = f(x_0) + f'(x_0)(x-x_0)
+\]
+\[
+    f(x) \approx L(x) \text{ for } x \text{ near } x_0
+\]
+
+This is useful for approximating the value of a function near a point. $x_0$ should be an integer close to the point you are trying to approximate.
+\subsubsection{Example of Linearization}
+Given the function \(f(x) = \sqrt{x}\) and the point \(x_0 = 3.9\), we can approximate this by linearizing \(f(x)\) at \(x_0\):
+\begin{align*}
+    L(x) &= f(x_0) + f'(x_0)(x-x_0)\\
+    L(x) &= \sqrt{4} + \dfrac{1}{2\sqrt{4}}(x-4)\\
+    L(x) &= 2 + \dfrac{1}{4}(x-4)\\
+    L(3.9) &= 1.975 \approx \sqrt{3.9} \approx 1.9748    
+\end{align*}
+
 \section{Partial Derivatives}
 \subsection{Partial Derivatives Definition}
 
@@ -530,6 +646,32 @@ All partial derviatives combined are:
     \end{cases}
 \]
 
+\section{Chain Rule}
+
+Given two functions \(f(x, y)\) and \(f(a, b)\) where $a$ and $b$ are dependent on $x$ and $y$, the chain rule states:
+
+The partial derivative of the composite function with respect to the first new variable is equal to the partial derivative of the composite function with respect to the first old variable multiplied by partial derivative of the same old variable with respect to the current new variable plus.
+
+\subsection{Examples:}
+Find $\pd{z}{r}$:
+\begin{align*}
+    z(r,\theta) &= f(x, y)\\
+    \text{where } x &= r\cos\theta,\\
+    \text{ and } y &= r\sin\theta\\
+    \pd{z}{r} &= \pd{f}{x}\pd{x}{r} + \pd{f}{y}\pd{y}{r}\\
+    &= \pd{f}{x}\cos\theta + \pd{f}{y}\sin\theta
+\end{align*}
+We do not have $\pd{f}{x}$ or $\pd{f}{y}$, so we cannot find the exact value of $\pd{z}{r}$.
+
+\[
+g(u, v, \ldots) = f(x, y, \ldots)
+\]
+\begin{align*}
+    &\pd{g}{u} = \pd{f}{x}\pd{x}{u} + \pd{f}{y}\pd{y}{u} + \ldots\\
+    &\pd{g}{v} = \pd{f}{x}\pd{x}{v} + \pd{f}{y}\pd{y}{v} + \ldots\\
+    &\,\,\,\vdots
+\end{align*}
+
 % Example content for partial derivative rules, examples, and applications.
 
 %-------------------------------
@@ -560,6 +702,9 @@ In mathematics and physics, \textbf{scalars} and \textbf{vectors} are fundamenta
 \vec{v} = \langle v_x, v_y, v_z \rangle.
 \]
 An example of a vector is a displacement of \(5 \, \text{m}\) to the right and \(3 \, \text{m}\) upwards, represented as \(\vec{d} = \langle 5, 3, 0 \rangle\).
+
+
+Vectors are a collection of all directed line segments that have the same length and the same direction. This one and the same length is called the magnitude of the vector and this one and the same direction is called the direction of the vector.
 
 In summary:
 
@@ -652,7 +797,28 @@ To find the cross product \(\vec{u} \times \vec{v}\), arrange the components as 
 \]
 
 Then, calculate each component of the cross product by making crosses between $u_y$ and $v_z$, $u_z$ and $v_y$, $u_z$ and $v_x$, $u_x$ and $v_z$, $u_x$ and $v_y$, and $u_y$ and $v_x$. This yields the components of the cross product vector and is easy to visualize.
-
+\subsection{Applications of the Cross Product}
+\begin{itemize}
+    \item \textbf{Finding a perpendicular vector to 2 vectors}:
+    \[
+        \vec{u} \times \vec{v} = \vec{w}
+    \]
+    \[
+        \vec{w} \perp \vec{u} \text{ and } \vec{v} 
+    \]
+    \item \textbf{Area of a traingle}:
+    
+    The area of a triangle with sides \(\vec{u}\) and \(\vec{v}\) is:
+    \[
+        \dfrac{1}{2} ||\vec{u} \times \vec{v}||
+    \]
+    \item \textbf{Finding 2D direction in a plane given by 2 vectors or 3 points}:
+    
+    The direction of a vector \(\vec{w}\) in a plane given by vectors \(\vec{u}\) and \(\vec{v}\) is:
+    \[
+        \vec{w} = \vec{u} \times \vec{v}
+    \]
+\end{itemize}
 \section{Triple Scalar Product}
 The triple scalar product of three vectors \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\) is defined as:
 \[
@@ -660,8 +826,8 @@ The triple scalar product of three vectors \(\vec{u}\), \(\vec{v}\), and \(\vec{
 \]
 It is often shown as $\tsp{u}{v}{w}$ and has a few niche uses.
 \begin{itemize}
-    \item The volume of a parallelepiped with sides \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\).
-    \item The determinant of a matrix.
+    \item \textbf{The volume of a parallelepiped with sides \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\).}
+    \item \textbf{The determinant of a matrix.}
     \[\text{det}(M) = 
     \begin{vmatrix}
         u_x & u_y & u_z \\
@@ -670,11 +836,11 @@ It is often shown as $\tsp{u}{v}{w}$ and has a few niche uses.
     \end{vmatrix}
         = \tsp{u}{v}{w}
     \]
-    \item The volume of a tetrahedron with noncoplanar edges \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\)
+    \item \textbf{The volume of a tetrahedron with noncoplanar edges \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\)}
         \[
             \abs{\dfrac{\tsp{u}{v}{w}}{6}}
         \]
-    \item The scalar triple product is zero if the vectors are coplanar. 
+    \item \textbf{The scalar triple product is zero if the vectors are coplanar.} 
         \[
             \text{iff }\, \tsp{u}{v}{w} = 0 \text{ then } \vec{u}, \vec{v}, \vec{w} \text{ are coplanar}
         \]

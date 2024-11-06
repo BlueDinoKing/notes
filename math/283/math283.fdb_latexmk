@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730919321.40362 "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" "math283.pdf" "math283" 1730919324.3562 0
+["pdflatex"] 1730929411.73606 "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" "math283.pdf" "math283" 1730929412.86239 0
   "C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730915284 1564848 8844c5dd88c3c540f98510ecde7cc446 ""
   "C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1730744745 14064 f549596526c3f58c6bd6d28eabc9a490 ""
   "C:/Users/silas.349763/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730695910 24228391 3223ffb79cd0c9bd0f575a210e2e9549 ""
@@ -62,14 +62,14 @@
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
-  "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" 1730919318 25090 48f689aae4087fe236ffabf6bf2e86b5 ""
+  "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" 1730929410 30850 7a36113bbe699dc4d361edc897682ba2 ""
   "domain1.png" 1730869810 30874 be565785521118fd9f49ff83b7f84001 ""
   "domain2.png" 1730913116 12599 b8045b875f2ccae4b3621bc0f33cd2e0 ""
   "graph1.png" 1730870900 87514 95197b603af4404e351a13092650e0ec ""
   "graph2.png" 1730913210 21927 8c8b3ea4628e6a058ce5ef2738fb3167 ""
-  "math283.aux" 1730919323 5889 9a6fe6ce43aaa95f4f89bd0cc4c3773a "pdflatex"
-  "math283.tex" 1730919318 25090 48f689aae4087fe236ffabf6bf2e86b5 ""
-  "math283.toc" 1730919323 3432 c7deca1875c5e7ca3984f80726233841 "pdflatex"
+  "math283.aux" 1730929412 8228 01ed37c0143c37e5a889bf07a232c4c7 "pdflatex"
+  "math283.tex" 1730929410 30850 7a36113bbe699dc4d361edc897682ba2 ""
+  "math283.toc" 1730929412 4910 969eba3a3d979a946d1ef17727af7f3f "pdflatex"
   (generated)
   "math283.aux"
   "math283.log"
