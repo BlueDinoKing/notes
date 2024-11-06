@@ -1,12 +1,12 @@
 \documentclass[a4paper,12pt,openany]{book}
-\usepackage{amsmath}    % Advanced math features
-\usepackage{amsfonts}   % Math fonts
-\usepackage{amssymb}    % Math symbols
-\usepackage{graphicx}   % Including graphics
-\usepackage{geometry}   % Page layout adjustments
-\usepackage{fancyhdr}   % Custom headers and footers
-\usepackage{titlesec}   % Title formatting
-\usepackage{multicol}   % Multi-column formatting
+\usepackage{amsmath}     % Advanced math features
+\usepackage{amsfonts}    % Math fonts
+\usepackage{amssymb}     % Math symbols
+\usepackage{graphicx}    % Including graphics
+\usepackage{geometry}    % Page layout adjustments
+\usepackage{fancyhdr}    % Custom headers and footers
+\usepackage{titlesec}    % Title formatting
+\usepackage{multicol}    % Multi-column formatting
 
 % Page layout settings
 \geometry{
@@ -55,6 +55,16 @@
 \newcommand{\dirder}[2]{
     #1\prime_\vec{#2}
 }
+\newcommand{\abs}[1]{
+    \left\vert#1\right\vert
+}
+\newcommand{\magn}[1]{
+    \left\Vert#1\right\Vert
+}
+\newcommand{\parenth}[1]{
+    \left(#1)\right
+}
+
 % Custom header and footer
 \pagestyle{fancy}
 \fancyhf{}
@@ -271,7 +281,25 @@ For functions of two or more variables, the domain and range extend to higher di
         \item \textbf{Range}: \(\mathbb{R}\)
         \item \textbf{Graph}: Exists in four-dimensional space; it cannot be visualized in three dimensions.
     \end{itemize}
-\pagebreak
+\textbf{3: Rational Function of Two Variables}
+    \[
+        f(x, y) = 5 - 7 \sqrt{13-x^2-y^2-2x}
+    \]
+    \begin{itemize}
+        \item \textbf{Domain}: $(x-1)^2+y^2 \leq 14$, disk with center $(1, 0)$ with radius $\sqrt{14}$.
+        \begin{center}
+            \includegraphics[width=0.3\textwidth]{domain1.png}
+        \end{center}
+        \item \textbf{Range}: $\left[5-7\sqrt{13}, 5\right]$
+        \item \textbf{Graph}: A surface in three-dimensional space. This equation can be rewritten as 
+        \[
+            \frac{\left(x-1\right)^{2}}{14}+\frac{\left(y\right)^{2}}{14}+\frac{\left(z-5\right)^{2}}{49\cdot14}=1
+        \] 
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{graph1.png}
+        \end{center}
+    \end{itemize}
+
 \section{Graphing Dimensions Summary}
 
 Graphing dimensions change based on the variables involved:
@@ -312,11 +340,61 @@ Multiple integrals extend single-variable integration to functions of several va
 \chapter{Vector Calculus}
 Vector calculus explores vector fields and operations such as the gradient, divergence, and curl, which are foundational in physics, engineering, and mathematics.
 
-\section{Introduction to Vectors}
-Vectors represent quantities with both magnitude and direction. Key operations include scalar multiplication, addition, and vector products like the dot and cross products.
+\section{Introduction to Vectors and Scalars}
+In mathematics and physics, \textbf{scalars} and \textbf{vectors} are fundamental quantities that describe different types of quantities.
+
+\textbf{Scalars} are single numbers that represent quantities that have only magnitude, without any direction. Examples of scalars include:
+
+- Temperature (e.g., \(25^\circ \text{C}\))\\
+- Mass (e.g., \(5 \, \text{kg}\))\\
+- Distance (e.g., \(10 \, \text{m}\))
+
+\textbf{Vectors}, on the other hand, are quantities that have both magnitude and direction. Vectors are represented as an ordered list of components in a coordinate system. For example, in three-dimensional space, a vector \(\vec{v}\) can be represented as:
+\[
+\vec{v} = \langle v_x, v_y, v_z \rangle.
+\]
+An example of a vector is a displacement of \(5 \, \text{m}\) to the right and \(3 \, \text{m}\) upwards, represented as \(\vec{d} = \langle 5, 3, 0 \rangle\).
+
+In summary:
+
+- A \textbf{scalar} is a quantity that has only magnitude.\\
+- A \textbf{vector} is a quantity that has both magnitude and direction.
+
+\subsection{Vector Addition}
+You \textbf{cannot} add a vector and a scalar. However, you can add two vectors together. Vector addition combines two vectors \(\vec{u}\) and \(\vec{v}\) to produce a resultant vector \(\vec{w}\):
+\[
+    \vec{w} = \vec{u} + \vec{v} = \langle u_x + v_x, u_y + v_y, u_z + v_z \rangle
+\]
+For example, given these vectors: $\vcomponents{u}{1}{2}{3}$, and $\vcomponents{v}{4}{5}{6}$
+\[
+\vec{u} + \vec{v} = \langle 1 + 4, 2 + 5, 3 + 6 \rangle = \langle 5, 7, 9 \rangle
+\]
+
+\subsection{Vector Scalar Multiplication}
+A vector and scalar can be multiplied, but two vectors cannot be multiplied in the traditional sense.
+\[
+    k\vec{u} = \langle ku_x, ku_y, ku_z \rangle
+\]
+
 
 \subsection{Scalar Multiples}
-A scalar multiple of a vector \(\vec{u}\) scales its magnitude without changing its direction.
+A scalar multiple of a vector \(\vec{u}\) scales its magnitude without changing its direction. If \(\vec{v}\) is collinear to \(\vec{u}\), then there exists some scalar $k$ where \(\vec{v} = k\vec{u}\).
+For example, given these vectors: $\vcomponents{u}{1}{2}{3}$, and $\vcomponents{v}{2}{4}{6}$
+\[
+2\vec{u} = \vec{v}
+\]
+\[
+2\left\langle 1, 2, 3\right\rangle = 
+\left\langle 2, 4, 6\right\rangle
+\]
+For any \(\vec{u}\), \(\vec{v}\), and scalar \(k\):
+\[
+k\vec{u} = \langle ku_x, ku_y, ku_z \rangle
+\]
+\[
+    \text{iff } \vec{v} = \langle ku_x, ku_y, ku_z \rangle \text{ for some scalar } k, \vec{v} \parallel \vec{u}
+\]
+
 
 \section{Dot Product}
 The dot product is an operation between two vectors \(\vec{u}\) and \(\vec{v}\) that produces a scalar, and is calculated as:
@@ -369,6 +447,21 @@ To find the cross product \(\vec{u} \times \vec{v}\), arrange the components as 
 
 Then, calculate each component of the cross product by making crosses between $u_y$ and $v_z$, $u_z$ and $v_y$, $u_z$ and $v_x$, $u_x$ and $v_z$, $u_x$ and $v_y$, and $u_y$ and $v_x$. This yields the components of the cross product vector and is easy to visualize.
 
+\section{Triple Scalar Product}
+The triple scalar product of three vectors \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\) is defined as:
+\[
+    \vec{u} \cdot (\vec{v} \times \vec{w}) = \vec{v} \cdot (\vec{w} \times \vec{u}) = \vec{w} \cdot (\vec{u} \times \vec{v})
+\]
+It is often shown as $\tsp{u}{v}{w}$ and has a few niche uses.
+\begin{itemize}
+    \item The volume of a parallelepiped with sides \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\).
+    \item The determinant of a matrix with rows \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\).
+    \item The volume of a tetrahedron with noncoplanar edges \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\)
+        \[
+            \abs{\frac{\tsp{u}{v}{w}}{6}}
+        \]
+    \item The scalar triple product is zero if the vectors are coplanar. 
+\end{itemize}
 \section{Directional Derivatives}
 \subsection{Definition}
 The directional derivative of \(f\) at a point \((x_0, y_0, z_0)\) in the direction of a vector \(\vec{v}\) is defined as:
@@ -378,6 +471,12 @@ The directional derivative of \(f\) at a point \((x_0, y_0, z_0)\) in the direct
     \frac{
         f(x_0 + h \cos \alpha, y_0 + h \cos \beta, z_0 + h \cos \gamma) - f(x_0, y_0, z_0)
     }{h}
+\]
+\[
+    f'_{\vec{v}}(x_0, y_0, z_0) = 
+    \lim_{h \to 0}
+    \frac{
+        f((x_0, y_0, z_0) + h\frac{\vec{v}}{\magn{\vec{v}}}) - f(x_0, y_0, z_0)}{h}
 \]
 where \(\cos \alpha\), \(\cos \beta\), and \(\cos \gamma\) are the \textbf{directional cosines} of \(\vec{v}\).
 
