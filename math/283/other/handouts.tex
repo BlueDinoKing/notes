@@ -1,0 +1,213 @@
+\chapter*{Seven Handouts}
+\section{Handout 1: Domain of Elementary Functions}
+
+\begin{alignat*}{2}
+    f &= \dfrac{u}{v} &\quad &\Rightarrow v \neq 0 \\
+    f &= \sqrt[2k]{u} &\quad &\Rightarrow u \geq 0 \quad (k \in \mathbb{N}) \\
+    f &= \log_{v}{u} &\quad &\Rightarrow u, v > 0, v \neq 1 \\
+    f &= \tan(u) &\quad &\Rightarrow u \neq \dfrac{\pi}{2} + k\pi \quad (k \in \mathbb{Z}) \\
+    f &= \cot(u) &\quad &\Rightarrow u \neq k\pi \quad (k \in \mathbb{Z}) \\
+    f &= \arcsin(u) &\quad &\Rightarrow -1 \leq u \leq 1 \\
+    f &= \arccos(u) &\quad &\Rightarrow -1 \leq u \leq 1 \\
+    f &= u^v &\quad &\Rightarrow u > 0 \text{ or } v \in \mathbb{N} 
+\end{alignat*}
+Important fact: All elementary functions are continuous on their domain except at the isolated points.
+$v \neq $ constant or $v = $ irrational constant.
+
+\section{Handout 2: Fundamental Formulas for Integration}
+
+\begin{alignat*}{8}
+    &\int u^n u' \, dx  &&= \int u^n \, du 
+    &&= \dfrac{u^{n+1}}{n+1} + C &\text{for } n \neq -1 \\
+    &\int \dfrac{u'}{u} \, dx &&= \int \dfrac{du}{u} 
+    &&= \ln|u| + C & \\
+    &\int a^u u' \, dx &&= \int a^u \, du 
+    &&= \dfrac{a^u}{\ln a} + C &\text{for } a > 0, a \neq 1 \\
+    &\int \sin(u) \, dx && &&= -\cos(u) + C & \\
+    &\int \cos(u) \, dx && &&= \sin(u) + C & \\
+    &\int \dfrac{1}{\cos^2(u)} \, dx 
+    &&= \int \sec^2(u) \, du &&= \tan(u) + C & \\
+    &\int \dfrac{u'dx}{u^2+a^2} && = \dfrac{1}{a} \arctan\left(\dfrac{u}{a}\right) + C_1 
+    &&= -\dfrac{1}{a}arccot\dfrac{u}{a} + C_2 & \\
+    &\int \dfrac{u'dx}{a^2-u^2} && &&= \dfrac{1}{2a}\ln\left|\dfrac{a+u}{a-u}\right| + C_1\\
+    &\int \dfrac{u'dx}{\sqrt{a^2-u^2}} &&= \arcsin\left(\dfrac{u}{a}\right) + C_1
+    &&= -\arccos\left(\dfrac{u}{a}\right) + C_2 & \\
+    &\int \dfrac{u'dx}{u\sqrt{u^2\pm a^2}} &&= \dfrac{1}{a}\ln\left|u+\sqrt{u^2\pm a^2}\right| + C_1
+    &&= -\dfrac{1}{a}\ln\left|u+\sqrt{u^2\pm a^2}\right| + C_2 & \\
+    &\int \dfrac{u'dx}{u\sqrt{a^2-u^2}} &&= \dfrac{1}{a}\arcsin\left(\dfrac{u}{a}\right) + C_1 &&= -\dfrac{1}{a}\arccos\left(\dfrac{u}{a}\right) + C_2
+\end{alignat*}
+
+\section{Handout 3: Formulas, definitions, and equations}
+\subsection{Basic Trigonometric Equations}
+\begin{alignat*}{8}
+    &\sin(x) = a 
+    &&\text{ for } a \in [-1, 1]
+    &&\Leftrightarrow x =(-1)^n\arcsin(a) + 2n\pi\quad 
+    &&n \in \mathbb{Z} \\
+    &\sin(x) = 0 
+    &&
+    &&\Leftrightarrow x = n\pi 
+    &&n \in \mathbb{Z} \\
+    &\sin(x) = \pm 1 &&
+    &&\Leftrightarrow x = \pm\dfrac{\pi}{2} + 2n\pi
+    &&n \in \mathbb{Z} \\
+    &\cos(x) = a 
+    &&\text{ for } a \in [-1, 1]
+    &&\Leftrightarrow x =(-1)^n\arccos(a) + 2n\pi 
+    &&n \in \mathbb{Z} \\
+    &\cos(x) = 0
+    &&
+    &&\Leftrightarrow x = \dfrac{\pi}{2} + n\pi
+    &&n \in \mathbb{Z} \\
+    &\cos(x) = \pm 1
+    &&
+    &&\Leftrightarrow x = 2n\pi
+    &&n \in \mathbb{Z} \\
+    &\tan(x) = a
+    &&\text{ for } a \in \mathbb{R}
+    &&\Leftrightarrow x = \arctan(a) + n\pi
+    &&n \in \mathbb{Z} \\
+    &\cot(x) = a
+    &&\text{ for } a \in \mathbb{R}
+    &&\Leftrightarrow x = \text{arccot}(a) + n\pi
+    &&n \in \mathbb{Z}
+\end{alignat*}
+    
+\subsection{Inverse Trigonometric Functions}
+
+\begin{alignat*}{8}
+    &\arcsin(x) = a
+    &&\text{ for } a \in [-\dfrac{\pi}{2}, \dfrac{\pi}{2}]
+    &&\Leftrightarrow x = \sin(a)
+    &&\text{ for } x \in [-1, 1] \\
+    &\arccos(x) = a
+    &&\text{ for } a \in [0, \pi]
+    &&\Leftrightarrow x = \cos(a)
+    &&\text{ for } x \in [-1, 1] \\
+    &\arctan(x) = a
+    &&\text{ for } a \in (-\dfrac{\pi}{2}, \dfrac{\pi}{2})
+    &&\Leftrightarrow x = \tan(a)
+    &&\text{ for } x \in \mathbb{R} \\
+    &\text{arccot}(x) = a
+    &&\text{ for } a \in (0, \pi)
+    &&\Leftrightarrow x = \cot(a)
+    &&\text{ for } x \in \mathbb{R}
+\end{alignat*}
+
+\subsection{Other Formulas}
+\[
+    \sqrt{a^2} = |a|, \qquad e^{a\ln(b)} = b^a, \qquad \log_a(b) = \dfrac{\ln(b)}{\ln(a)}
+\]
+\pagebreak
+\section{Handout 4: Derivatives}
+
+\[
+    f'(x) = \lim_{z \to x} \dfrac{f(z) - f(x)}{z-x} = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h}
+\]
+
+\begin{multicols}{2}
+    \begin{align*}
+        c' &= 0 \\
+        x' &= 1 \\
+        (u^n)' &= nu^{n-1}u' \\
+        (\sqrt{u})' &= \dfrac{u'}{2\sqrt{u}} \\
+        (\sin{u})' &= \cos{u}u' \\
+        (\cos{u})' &= -\sin{u}u' \\
+        (\tan{u})' &= \sec^2{u}u' \\
+        (\cot{u})' &= -\csc^2{u}u' \\
+        (\sec{u})' &= \sec{u}\tan{u}u' \\
+        (\csc{u})' &= -\csc{u}\cot{u}u' \\
+        (u\pm v)' &= u' \pm v' \\
+        (uv)' &= u'v + uv' \\  
+        (cu)' &= cu' \\
+        \left(\dfrac{u}{v}\right)' &= \dfrac{u'v - uv'}{v^2} \\
+        \left(\dfrac{c}{u^n}\right)' &= -\dfrac{ncu'}{u^{n+1}} \\
+    \end{align*}
+    \vfill\null
+    \columnbreak
+
+    \begin{align*}
+        (\dfrac{u}{c})' &= \dfrac{u'}{c} \\
+        (\dfrac{c}{u})' &= -\dfrac{cu'}{u^2} \\
+        (e^u)' &= e^u u' \\
+        (a^u)' &= a^u \ln(a)u' \\
+        (\ln{u}) &= \dfrac{u'}{u} \\
+        (\log_a{u})' &= \dfrac{u'}{u\ln(a)} \\
+        (\arcsin{u})' &= \dfrac{u'}{\sqrt{1-u^2}} \\
+        (\arccos{u})' &= -\dfrac{u'}{\sqrt{1-u^2}} \\
+        (\arctan{u})' &= \dfrac{u'}{1+u^2} \\
+        (\text{arccot}{u})' &= -\dfrac{u'}{1+u^2} \\
+    \end{align*}
+\end{multicols}
+\pagebreak
+\section{Handout 5: Trigonometry}
+
+\subsection{Trigonometric Identities}
+
+\begin{align*}
+    \sin\alpha\cos\beta &= \dfrac{1}{2}\sin{(\alpha-\beta)} + \dfrac{1}{2}\sin{(\alpha+\beta)} \\
+    \cos\alpha\cos\beta &= \dfrac{1}{2}\cos{(\alpha-\beta)} + \dfrac{1}{2}\cos{(\alpha+\beta)} \\
+    \sin\alpha\sin\beta &= -\dfrac{1}{2}\cos{(\alpha+\beta)} + \dfrac{1}{2}\cos{(\alpha-\beta)} \\
+    \vspace{.25in}\\
+    \cos^2\alpha &= \dfrac{1+\cos{2\alpha}}{2} \\
+    \sin^2\alpha &= \dfrac{1-\cos{2\alpha}}{2} \\
+    \vspace{.25in}\\
+    \sin{(\alpha \pm \beta)} &= \sin\alpha\cos\beta \mp \cos\alpha\sin\beta \\
+    \cos{(\alpha \pm \beta)} &= \cos\alpha\cos\beta \mp \sin\alpha\sin\beta \\
+    \tan{(\alpha \pm \beta)} &= \dfrac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}\\
+    \vspace{.25in}\\
+    \sin{(2\alpha)} &= 2\sin\alpha\cos\alpha \\
+    \cos{(2\alpha)} &= \cos^2\alpha - \sin^2\alpha \\
+    \tan{(2\alpha)} &= \dfrac{2\tan\alpha}{1-\tan^2\alpha}\\
+    \vspace{.25in}\\
+    \sin(\alpha) \pm \sin(\beta) &= 2\sin\left(\dfrac{\alpha \pm \beta}{2}\right)\cos\left(\dfrac{\alpha \mp \beta}{2}\right) \\
+    \cos(\alpha) \pm \cos(\beta) &= 2\cos\left(\dfrac{\alpha + \beta}{2}\right)\cos\left(\dfrac{\alpha \mp \beta}{2}\right) \\
+\end{align*}
+How to exit trigonometry:
+\begin{alignat*}{8}
+    \tan{\dfrac{x}{2}} = y &\Rightarrow \sin x &&= \dfrac{2y}{1+y^2}, &\cos x &= \dfrac{1-y^2}{1+y^2}, & dx &= \dfrac{2dy}{1+y^2} &&\text{ for } x \neq (2k+1)\pi\\
+    \tan x = y &\Rightarrow \sin^2 x &&= \dfrac{y}{1+y^2},\,\, &\cos^2 x &= \dfrac{1}{1+y^2},\,\, & dx &= \dfrac{dy}{1+y^2} &&\text{ for } x \neq \dfrac{\pi}{2} + k\pi\\
+\end{alignat*}
+\pagebreak
+\subsection{Trigonometric Chart}
+\begingroup
+\linespread{2}\selectfont  % Adjust the line spacing to 1.5 times the normal
+
+\begin{table*}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Angle} & \textbf{Sine} & \textbf{Cosine} & \textbf{Tangent} & \textbf{Cotangent} \\
+\hline
+$-\dfrac{\pi}{2} - 0$ & $-1$ & $-0$ & $+\infty$ & $+0$ \\
+$-\dfrac{\pi}{2} + 0$ & $-1$ & $+0$ & $-\infty$ & $-0$ \\
+$-0$ & $-0$ & $1$ & $-0$ & $-\infty$ \\
+$+0$ & $+0$ & $1$ & $+0$ & $+\infty$ \\
+$\dfrac{\pi}{6}$ & $\dfrac{1}{2}$ & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{1}{\sqrt{3}}$ & $\sqrt{3}$ \\
+$\dfrac{\pi}{4}$ & $\dfrac{\sqrt{2}}{2}$ & $\dfrac{\sqrt{2}}{2}$ & $1$ & $1$ \\
+$\dfrac{\pi}{3}$ & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{1}{2}$ & $\sqrt{3}$ & $\dfrac{1}{\sqrt{3}}$ \\
+$\dfrac{\pi}{2} - 0$ & $1$ & $+0$ & $+\infty$ & $+0$ \\
+$\dfrac{\pi}{2} + 0$ & $1$ & $-0$ & $-\infty$ & $-0$ \\
+$\pi - 0$ & $+0$ & $-1$ & $-0$ & $-\infty$ \\
+$\pi + 0$ & $-0$ & $-1$ & $+0$ & $+\infty$ \\
+\hline
+\end{tabular}
+\end{table*}
+
+\pagebreak
+\section{Handout 6: Power Series for Elementary Functions}
+
+\begin{alignat*}{4}
+    \dfrac{1}{1-x} &= \sum_{n=0}^{\infty} x^n, \quad &&x\in (-1, 1) \\
+    e^x &= \sum_{n=0}^\infty\dfrac{x^n}{n!}, &&x \in(-\infty, +\infty) \\
+    \sin x &= \sum_{n=1}^\infty (-1)^{n-1} \dfrac{x^{2n-1}}{(2n-1)!}, \quad&&x \in (-\infty, +\infty) \\
+    \cos x &= \sum_{n=0}^\infty (-1)^{n} \dfrac{x^{2n}}{(2n)!}, \quad&&x \in (-\infty, +\infty) \\
+    \ln{(1+x)} &= \sum_{n=1}^\infty (-1)^{n-1} \dfrac{x^n}{n}, \quad&&x \in \left(-1, 1\right] \\
+    \arctan x &= \sum_{n=0}^\infty (-1)^n \dfrac{x^{2n+1}}{2n+1}, \quad&&x \in [-1, 1] \\
+    (1+x)^\alpha &= \sum_{n=0}^\infty \binom{\alpha}{n} x^n, \quad&&x \in (-1, 1) \\
+    \binom{\alpha}{n} &= \dfrac{\alpha(\alpha-1)\cdots(\alpha-(n-1))}{n!} \\
+    \arcsin x &= \sum_{n=0}^\infty \dfrac{(2n)!}{4^n(n!)^2(2n+1)}x^{2n+1}, \quad&&x \in [-1, 1]
+\end{alignat*}
+
+
+\endgroup

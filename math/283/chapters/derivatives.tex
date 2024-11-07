@@ -1,0 +1,276 @@
+\chapter{Partial Derivatives}
+Partial derivatives are used to study functions with multiple variables by differentiating with respect to one variable while keeping the others constant.
+
+\section{Differentiability}
+A function of more than two variables is said to be
+differentiable if the function all of its first partial
+derivative and all of its second partial derivatives exist
+and are continuous.
+
+\section{Introduction}
+Partial derivatives are used to study how a function changes with respect to one variable while keeping the others constant.
+
+\subsection{Differentials}
+The derivative of a function \(f(x)\) with respect to \(x\) is denoted as: $\dfrac{dy}{dx}$ or $f'(x)$ where dx is the differential of x and $dy = f'(x)dx$.
+Differentials are different than derivatives, as they are the change in the function value due to a change in the variable. For example,
+\[
+\text{if }f(x) = x^2\text{, then } df = 2xdx\text{.}
+\]
+\[
+d(\arctan(u)) = \dfrac{du}{1+u^2}\text{ but }\arctan(u') = \dfrac{u'}{1+u^2}
+\]
+
+\subsubsection{Error Estimation}
+The error in a function \(f(x)\) can be estimated by the differential:
+\begin{equation}\label{Error Estimation}
+    df = f'(x)dx
+\end{equation}
+This is useful for approximating the error in a function given a small change in the variable.
+
+\subsubsection{Example of Error Estimation}
+Given the equation $A = lw$, $l = 5m$, $w = 3m$, $dl = 0.001m$, and $dw = 0.001m$, find the error in the area ($dA$): 
+\begin{align*}
+    A &= lw\\
+    dA &= wdl + ldw\\
+    dA &= (3)(0.001) + (5)(0.001)\\
+    dA &= 0.008m^2
+\end{align*}
+\subsection{Derivatives}
+
+\[
+    f(x) \text{is differentiable iff } \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h} \text{ exists}
+\]
+\subsubsection{Linearization}
+The linearization of a function \(f(x)\) at a point \(x_0\) is given by:
+\begin{equation}\label{Linearization}
+    L(x) = f(x_0) + f'(x_0)(x-x_0)
+\end{equation}
+\[
+    f(x) \approx L(x) \text{ for } x \text{ near } x_0
+\]
+
+This is useful for approximating the value of a function near a point. $x_0$ should be an integer close to the point you are trying to approximate.
+\subsubsection{Example of Linearization}
+Given the function \(f(x) = \sqrt{x}\) and the point \(x_0 = 3.9\), we can approximate this by linearizing \(f(x)\) at \(x_0\):
+\begin{align*}
+    L(x) &= f(x_0) + f'(x_0)(x-x_0)\\
+    L(x) &= \sqrt{4} + \dfrac{1}{2\sqrt{4}}(x-4)\\
+    L(x) &= 2 + \dfrac{1}{4}(x-4)\\
+    L(3.9) &= 1.975 \approx \sqrt{3.9} \approx 1.9748    
+\end{align*}
+
+\section{Partial Derivatives}
+\subsection{Partial Derivatives Definition}
+
+The partial derivative of a function \(f(x, y)\) with respect to \(x\) is denoted as:
+\[
+    \pd{f}{x} = \lim_{h \to 0} \dfrac{f(x+h, y) - f(x, y)}{h}
+\]
+This \textbf{not} a fraction. $\partial x$ does not exist, and neither does $\partial f$.
+
+\begin{equation}\label{Partial Derivative at a Point Definition}
+    \pd{f}{x}(x_0, y_0) = 
+    \lim_{x \to x_0} \dfrac{f(x, y_0) - f(x_0, y_0)}{x-x_0}
+\end{equation}
+\begin{equation}\label{Partial Derivative delfdelx Definition}
+    \pd{f}{x} = \lim_{h \to 0} \dfrac{f(x+h, y) - f(x, y)}{h}
+\end{equation}
+\begin{equation}\label{Partial Derivative delfdely Definition}
+    \pd{f}{y} = \lim_{h \to 0} \dfrac{f(x, y+h) - f(x, y)}{h}
+\end{equation}
+
+\subsubsection{Shortcut}
+The partial derivative of a function \(f(x, y, \cdots)\) with respect to \(x\) can be calculated by treating all other variables as a constant and differentiating with respect to \(x\):
+
+\subsection{All Defintions of First and Second Partial Derivatives}
+You sometimes have to use the definition of a partial derivative to find the actual value of the partial derivative. 
+\begin{equation} \label{Partial Derivative f_x Definition}
+    f_x = \pd{f}{x} = \lim_{h \to 0} \dfrac{f(x+h, y) - f(x, y)}{h}
+\end{equation}
+\begin{equation}\label{Partial Derivative f_y Definition}
+    f_y = \pd{f}{y} = \lim_{h \to 0} \dfrac{f(x, y+h) - f(x, y)}{h}
+\end{equation}
+\begin{equation}\label{Second Partial Derivative f_xx Definition}
+    f_{xy} = \pdm{f}{x}{y} = \lim_{h \to 0} \dfrac{\pd{f}{y}(x+h, y) - \pd{f}{y}(x, y)}{h}
+\end{equation}
+\begin{equation}\label{Second Partial Derivative f_yx Definition}
+    f_{yx} = \pdm{f}{y}{x} = \lim_{h \to 0} \dfrac{\pd{f}{x}(x, y+h) - \pd{f}{x}(x, y)}{h}
+\end{equation}
+\begin{equation}\label{Second Partial Derivative f_xx Definition}
+    f_{xx} = \pdm{f}{x}{x} = \lim_{h \to 0} \dfrac{\pd{f}{x}(x+h, y) - \pd{f}{x}(x, y)}{h}
+\end{equation}
+\begin{equation}\label{Second Partial Derivative f_yy Definition}
+    f_{yy} = \pdm{f}{y}{y} = \lim_{h \to 0} \dfrac{\pd{f}{y}(x, y+h) - \pd{f}{y}(x, y)}{h}
+\end{equation}
+
+\subsection{Properties of Partial Derivatives}
+If $f(x,y)$ is continuous at $(x_0, y_0)$, then $f_x$ and $f_y$ exist at $(x_0, y_0)$ and $f_{xy} = f_{yx}$.
+
+\subsubsection{Total Differential}
+The total differential of a function \(f(x, y)\) is given by:
+\[
+    df = \pd{f}{x}dx + \pd{f}{y}dy
+\]
+If you find df, it is very easy to find both partial derivatives via the coefficients of dx and dy.
+\subsection{Higher-Order Partial Derivatives}
+The second-order partial derivative of a function \(f(x, y)\) with respect to \(x\) and \(y\) is denoted as:
+\[
+    \pdm{f}{x}{y} = \pd{}{x}\left(\pd{f}{y}\right)
+\]
+Order does matter. For example, for some instances: \[\pdm{f}{x}{y} \neq \pdm{f}{y}{x}\] However, these are usually equal for continuous functions. It is read from left to right and can also be notated as $f_x$, \(f_{xy}\), \(f_{yx}\), etc.
+\pagebreak
+\section{Examples:}
+\[
+    f(x, y) = 
+    \begin{cases}
+        \dfrac{x^2 y}{x^2 + y^2}, & (x, y) \neq (0, 0)\\
+        0, & (x, y) = (0, 0)
+    \end{cases}
+\]
+
+For \( (x, y) \neq (0, 0) \), the partial derivatives are:
+\[
+    \pd{f}{x} = \dfrac{2xy^3}{(x^2 + y^2)^2}
+\]
+\[
+    \pd{f}{y} = \dfrac{x^4 - x^2 y^2}{(x^2 + y^2)^2}
+\]
+\[
+    \pdm{f}{x}{y} = \dfrac{2x^3 y^2 - 2x y^4}{(x^2 + y^2)^3}
+\]
+\[
+    \pdm{f}{y}{x} = \dfrac{2x^3 y^2 - 2x y^4}{(x^2 + y^2)^3}
+\]
+\[
+    \pdm{f}{x}{x} = \dfrac{2y^3(x^2 - y^2)}{(x^2 + y^2)^3}
+\]
+\[
+    \pdm{f}{y}{y} = \dfrac{x^2(2x^2 - y^2)}{(x^2 + y^2)^3}
+\]
+
+For \( (x, y) = (0, 0) \), we use the limit definition of partial derivatives. The partial derivative of \( f \) with respect to \( x \) at \( (0, 0) \) is:
+\[
+    \pd{f}{x}(0, 0) = \lim_{h \to 0} \dfrac{f(h, 0) - f(0, 0)}{h} = \lim_{h \to 0} \dfrac{0 - 0}{h} = 0
+\]
+Similarly, the partial derivative of \( f \) with respect to \( y \) at \( (0, 0) \) is:
+\[
+    \pd{f}{y}(0, 0) = \lim_{k \to 0} \dfrac{f(0, k) - f(0, 0)}{k} = \lim_{k \to 0} \dfrac{0 - 0}{k} = 0
+\]
+
+Thus, we have:
+\[
+    \pd{f}{x}(0, 0) = 0, \quad \pd{f}{y}(0, 0) = 0
+\]
+
+To find the second partial derivatives at \( (0, 0) \), we proceed similarly:
+\[
+    \pdm{f}{x}{x}(0, 0) = \lim_{h \to 0} \dfrac{\pd{f}{x}(h, 0) - \pd{f}{x}(0, 0)}{h} = \lim_{h \to 0} \dfrac{0 - 0}{h} = 0
+\]
+\[
+    \pdm{f}{y}{y}(0, 0) = \lim_{k \to 0} \dfrac{\pd{f}{y}(0, k) - \pd{f}{y}(0, 0)}{k} = \lim_{k \to 0} \dfrac{0 - 0}{k} = 0
+\]
+\[
+    \pdm{f}{x}{y}(0, 0) = \pdm{f}{y}{x}(0, 0) = \lim_{h \to 0} \dfrac{\pd{f}{y}(h, 0) - \pd{f}{y}(0, 0)}{h} = 0
+\]
+
+Thus, all second partial derivatives at \( (0, 0) \) are:
+\[
+    \pdm{f}{x}{x}(0, 0) = 0, \quad \pdm{f}{y}{y}(0, 0) = 0, \quad \pdm{f}{x}{y}(0, 0) = 0, \pdm{f}{y}{x}(0, 0) = DNE
+\]
+\[
+    \pdm{f}{y}{x}(0, 0) = 
+    \lim_{x\to 0} \dfrac{\pd{f}{x}(x, 0) - \pd{f}{x}(0, 0)}{x} = \lim_{x\to 0} \dfrac{1 - 0}{x} = DNE
+\]
+
+All partial derviatives combined are:
+\[
+    \pd{f}{x} = 
+    \begin{cases}
+        \dfrac{2xy^3}{(x^2 + y^2)^2}, & (x, y) \neq (0, 0)\\
+        0, & (x, y) = (0, 0)
+    \end{cases}
+\]
+\[
+    \pd{f}{y} = 
+    \begin{cases}
+        \dfrac{x^4 - x^2 y^2}{(x^2 + y^2)^2}, & (x, y) \neq (0, 0)\\
+        0, & (x, y) = (0, 0)
+    \end{cases}
+\]
+\[
+    \pdm{f}{x}{y} = 
+    \begin{cases}
+        \dfrac{2x^3 y^2 - 2x y^4}{(x^2 + y^2)^3}, & (x, y) \neq (0, 0)\\
+        0, & (x, y) = (0, 0)
+    \end{cases}
+\]
+\[
+    \pdm{f}{y}{x} = 
+    \begin{cases}
+        \dfrac{2x^3 y^2 - 2x y^4}{(x^2 + y^2)^3}, & (x, y) \neq (0, 0)\\
+        DNE, & (x, y) = (0, 0)
+    \end{cases}
+\]
+\[
+    \pdm{f}{x}{x} = 
+    \begin{cases}
+        \dfrac{2y^3(x^2 - y^2)}{(x^2 + y^2)^3}, & (x, y) \neq (0, 0)\\
+        0, & (x, y) = (0, 0)
+    \end{cases}
+\]
+\[
+    \pdm{f}{y}{y} = 
+    \begin{cases}
+        \dfrac{x^2(2x^2 - y^2)}{(x^2 + y^2)^3}, & (x, y) \neq (0, 0)\\
+        0, & (x, y) = (0, 0)
+    \end{cases}
+\]
+
+\section{Chain Rule}
+
+Given two functions \(f(x, y)\) and \(f(a, b)\) where $a$ and $b$ are dependent on $x$ and $y$, the chain rule states:
+
+The partial derivative of the composite function with respect to the first new variable is equal to the partial derivative of the composite function with respect to the first old variable multiplied by partial derivative of the same old variable with respect to the current new variable plus.
+
+\subsection{Examples:}
+
+\begin{enumerate}
+    
+    \item Find $\pd{z}{r}$:
+        \begin{align*}
+        z(r,\theta) &= f(x, y)\\
+        \text{where } x &= r\cos\theta,\\
+        \text{ and } y &= r\sin\theta\\
+        \pd{z}{r} &= \pd{f}{x}\pd{x}{r} + \pd{f}{y}\pd{y}{r}\\
+        &= \pd{f}{x}\cos\theta + \pd{f}{y}\sin\theta
+    \end{align*}
+    We do not have $\pd{f}{x}$ or $\pd{f}{y}$, so we cannot find the exact value of $\pd{z}{r}$.
+
+    \item $g(u, v, \ldots) = f(x, y, \ldots)$
+    
+    \begin{align*}
+        &\pd{g}{u} = \pd{f}{x}\pd{x}{u} + \pd{f}{y}\pd{y}{u} + \ldots\\
+        &\pd{g}{v} = \pd{f}{x}\pd{x}{v} + \pd{f}{y}\pd{y}{v} + \ldots\\
+        &\,\,\,\vdots
+    \end{align*}
+
+    \item $z = f(x, y)$, $x = s + t$, $y = s - t$
+    
+        
+        \[
+            \text{Show that: }\quad \left(\pd{z}{x}\right)^2 - \left(\pd{z}{y}\right)^2 = \pd{z}{s} \cdot \pd{z}{t}
+        \]
+        \[
+            z(s, t) = z(x, y)
+        \]
+        \begin{align*}
+            \pd{z}{s} &= \pd{z}{x}\cdot\pd{x}{s} + \pd{z}{y}\cdot\pd{y}{s}\\
+            &= \pd{z}{x} + \pd{z}{y}\\\\
+            \pd{z}{t} &= \pd{z}{x}\cdot\pd{x}{t} + \pd{z}{y}\cdot\pd{y}{t}\\
+            &= \pd{z}{x} - \pd{z}{y}\\\\
+            \pd{z}{s}\cdot\pd{z}{t} &= \left(\pd{z}{x} + \pd{z}{y}\right)\left(\pd{z}{x} - \pd{z}{y}\right)\\
+            &= \left(\pd{z}{x}\right)^2 - \left(\pd{z}{y}\right)^2\\
+            \therefore \pd{z}{s}\cdot\pd{z}{t} &= \left(\pd{z}{x}\right)^2 - \left(\pd{z}{y}\right)^2
+        \end{align*}
+
+\end{enumerate}

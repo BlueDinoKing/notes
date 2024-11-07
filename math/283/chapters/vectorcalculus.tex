@@ -1,0 +1,237 @@
+\chapter{Vector Calculus}
+Vector calculus explores vector fields and operations such as the gradient, divergence, and curl, which are foundational in physics, engineering, and mathematics.
+
+\section{Introduction to Vectors and Scalars}
+In mathematics and physics, \textbf{scalars} and \textbf{vectors} are fundamental quantities that describe different types of quantities.
+
+\textbf{Scalars} are single numbers that represent quantities that have only magnitude, without any direction. Examples of scalars include:
+
+- Temperature (e.g., \(25^\circ \text{C}\))\\
+- Mass (e.g., \(5 \, \text{kg}\))\\
+- Distance (e.g., \(10 \, \text{m}\))
+
+\textbf{Vectors}, on the other hand, are quantities that have both magnitude and direction. Vectors are represented as an ordered list of components in a coordinate system. For example, in three-dimensional space, a vector \(\vec{v}\) can be represented as:
+\[
+\vec{v} = \langle v_x, v_y, v_z \rangle.
+\]
+An example of a vector is a displacement of \(5 \, \text{m}\) to the right and \(3 \, \text{m}\) upwards, represented as \(\vec{d} = \langle 5, 3, 0 \rangle\).
+
+
+Vectors are a collection of all directed line segments that have the same length and the same direction. This one and the same length is called the magnitude of the vector and this one and the same direction is called the direction of the vector.
+
+In summary:
+
+- A \textbf{scalar} is a quantity that has only magnitude.\\
+- A \textbf{vector} is a quantity that has both magnitude and direction.
+
+\subsection{Vector Addition}
+You \textbf{cannot} add a vector and a scalar. However, you can add two vectors together. Vector addition combines two vectors \(\vec{u}\) and \(\vec{v}\) to produce a resultant vector \(\vec{w}\):
+\begin{equation}\label{Vector Addition}
+    \vec{w} = \vec{u} + \vec{v} = \langle u_x + v_x, u_y + v_y, u_z + v_z \rangle
+\end{equation}
+For example, given these vectors: $\vcomponents{u}{1}{2}{3}$, and $\vcomponents{v}{4}{5}{6}$
+\[
+\vec{u} + \vec{v} = \langle 1 + 4, 2 + 5, 3 + 6 \rangle = \langle 5, 7, 9 \rangle
+\]
+
+\subsection{Vector Scalar Multiplication}
+A vector and scalar can be multiplied, but two vectors cannot be multiplied in the traditional sense.
+
+\begin{equation}\label{Vector Scalar Multiplication}
+    k\vec{u} = \langle ku_x, ku_y, ku_z \rangle
+\end{equation}
+
+
+\subsection{Scalar Multiples}
+A scalar multiple of a vector \(\vec{u}\) scales its magnitude without changing its direction. If \(\vec{v}\) is collinear to \(\vec{u}\), then there exists some scalar $k$ where \(\vec{v} = k\vec{u}\).
+For example, given these vectors: $\vcomponents{u}{1}{2}{3}$, and $\vcomponents{v}{2}{4}{6}$
+\[
+2\vec{u} = \vec{v}
+\]
+\[
+2\left\langle 1, 2, 3\right\rangle = 
+\left\langle 2, 4, 6\right\rangle
+\]
+For any \(\vec{u}\), \(\vec{v}\), and scalar \(k\):
+\[
+k\vec{u} = \langle ku_x, ku_y, ku_z \rangle
+\]
+\[
+    \text{iff } \vec{v} = \langle ku_x, ku_y, ku_z \rangle \text{ for some scalar } k, \vec{v} \parallel \vec{u}
+\]
+
+
+\section{Dot Product}
+The dot product is an operation between two vectors \(\vec{u}\) and \(\vec{v}\) that produces a scalar, and is calculated as:
+\begin{equation}\label{Dot Product}
+    \vec{u} \cdot \vec{v} = u_x v_x + u_y v_y + \cdots + u_n v_n = ||\vec{u}|| \, ||\vec{v}|| \cos{\theta}
+\end{equation}
+where \(\theta\) is the angle between \(\vec{u}\) and \(\vec{v}\). The dot product is \textbf{commutative}:
+\[
+    \vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}
+\] 
+
+\subsection{Applications of the Dot Product}
+\begin{enumerate}
+    \item \textbf{Magnitude of a Vector}:
+    \[
+        \vec{a} \cdot \vec{a} = ||\vec{a}||^2
+    \]
+    \[
+        ||\vec{a}|| = \sqrt{\vec{a} \cdot \vec{a}}
+    \]
+
+    \item \textbf{Determining Perpendicularity}:
+    \[
+        \vec{a} \cdot \vec{b} = 0 \iff \vec{a} \perp \vec{b}
+    \]
+    For example, if \(\vec{a}_{L_1} \cdot \vec{a}_{L_2} = 0\), then lines \(L_1\) and \(L_2\) are perpendicular.
+
+    \item \textbf{Finding the Angle Between Two Vectors}:
+    \[
+        \cos{\theta} = \dfrac{\vec{u} \cdot \vec{v}}{||\vec{u}|| \, ||\vec{v}||}
+    \]
+
+    \item \textbf{Projection of a Vector}:
+    The projection of \(\vec{u}\) onto \(\vec{v}\) is:
+    \[
+        \vec{proj}_{\vec{v}} \vec{u} = \dfrac{\vec{u} \cdot \vec{v}}{||\vec{v}||^2} \vec{v}
+    \]
+
+    \item \textbf{Work Done by a Force}:
+    The work done by a force \(\vec{F}\) acting on an object displaced by \(\vec{d}\) is:
+    \[
+        W = \vec{F} \cdot \vec{d}
+    \]
+
+    \item \textbf{Orthogonal Projections}:
+    The orthogonal projection of \(\vec{u}\) onto \(\vec{v}\) is:
+    \[
+        \vec{proj}_{\vec{v}} \vec{u} = \dfrac{\vec{u} \cdot \vec{v}}{\vec{v} \cdot \vec{v}} \vec{v}
+    \]
+
+    \item \textbf{Finding the Angle Between Two Planes}:
+    The angle between two planes with normal vectors \(\vec{n_1}\) and \(\vec{n_2}\) is:
+    \[
+        \cos{\theta} = \dfrac{\vec{n_1} \cdot \vec{n_2}}{||\vec{n_1}|| \, ||\vec{n_2}||}
+    \]
+
+    \item \textbf{Finding the Distance Between a Point and a Plane}:
+    The distance between a point \(P\) and a plane with normal vector \(\vec{n}\) is:
+    \[
+        \text{dist}(P, \Pi) = \dfrac{|\vec{P} \cdot \vec{n}|}{||\vec{n}||}
+    \]
+
+    \item \textbf{Finding the Distance Between Two Parallel Lines}:
+    The distance between two parallel lines with direction vectors \(\vec{v_1}\) and \(\vec{v_2}\) is:
+    \[
+        \text{dist}(L_1, L_2) = \dfrac{|\vec{v_1} \cdot \vec{v_2}|}{||\vec{v_1}||}
+    \]
+
+    
+\end{enumerate}
+
+\section{Cross Product}
+The cross product is an operation on two 3D vectors that yields a vector perpendicular to both:
+\begin{equation}\label{Cross Product}
+    \vec{u} \times \vec{v} = 
+    \begin{vmatrix}
+        \uniti & \unitj & \unitk \\
+        u_x & u_y & u_z \\
+        v_x & v_y & v_z \\
+    \end{vmatrix} 
+    = \langle u_y v_z - u_z v_y, \; u_z v_x - u_x v_z, \; u_x v_y - u_y v_x \rangle
+\end{equation}
+This resultant vector \(\vec{w} = \vec{u} \times \vec{v}\) is perpendicular to both \(\vec{u}\) and \(\vec{v}\).
+\subsection{Shortcut for Cross Product}
+
+To find the cross product \(\vec{u} \times \vec{v}\), arrange the components as follows:
+\[
+\begin{array}{|cccccc|}
+    u_x & u_y & u_z & u_x & u_y & u_z \\
+    v_x & v_y & v_z & v_x & v_y & v_z \\
+\end{array}
+\]
+
+Then, calculate each component of the cross product by making crosses between $u_y$ and $v_z$, $u_z$ and $v_y$, $u_z$ and $v_x$, $u_x$ and $v_z$, $u_x$ and $v_y$, and $u_y$ and $v_x$. This yields the components of the cross product vector and is easy to visualize.
+\subsection{Applications of the Cross Product}
+\begin{itemize}
+    \item \textbf{Finding a perpendicular vector to 2 vectors}:
+    \[
+        \vec{u} \times \vec{v} = \vec{w}
+    \]
+    \[
+        \vec{w} \perp \vec{u} \text{ and } \vec{v} 
+    \]
+    \item \textbf{Area of a traingle}:
+    
+    The area of a triangle with sides \(\vec{u}\) and \(\vec{v}\) is:
+    \[
+        \dfrac{1}{2} ||\vec{u} \times \vec{v}||
+    \]
+    \item \textbf{Finding 2D direction in a plane given by 2 vectors or 3 points}:
+    
+    The direction of a vector \(\vec{w}\) in a plane given by vectors \(\vec{u}\) and \(\vec{v}\) is:
+    \[
+        \vec{w} = \vec{u} \times \vec{v}
+    \]
+\end{itemize}
+\section{Triple Scalar Product}
+The triple scalar product of three vectors \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\) is defined as:
+
+\begin{equation}\label{Triple Scalar Product}
+    \tsp{u}{v}{w} = 
+    \vec{u} \cdot (\vec{v} \times \vec{w}) = \vec{v} \cdot (\vec{w} \times \vec{u}) = \vec{w} \cdot (\vec{u} \times \vec{v})
+\end{equation}
+
+It is often shown as $\tsp{u}{v}{w}$ and has a few niche uses.
+\begin{itemize}
+    \item \textbf{The volume of a parallelepiped with sides \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\).}
+    \item \textbf{The determinant of a matrix.}
+    \[\text{det}(M) = 
+    \begin{vmatrix}
+        u_x & u_y & u_z \\
+        v_x & v_y & v_z \\
+        w_x & w_y & w_z \\
+    \end{vmatrix}
+        = \tsp{u}{v}{w}
+    \]
+    \item \textbf{The volume of a tetrahedron with noncoplanar edges \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\)}
+        \[
+            \abs{\dfrac{\tsp{u}{v}{w}}{6}}
+        \]
+    \item \textbf{The scalar triple product is zero if the vectors are coplanar.} 
+        \[
+            \text{iff }\, \tsp{u}{v}{w} = 0 \text{ then } \vec{u}, \vec{v}, \vec{w} \text{ are coplanar}
+        \]
+\end{itemize}
+\section{Directional Derivatives}
+\subsection{Definition}
+The directional derivative of \(f\) at a point \((x_0, y_0, z_0)\) in the direction of a vector \(\vec{v}\) is defined as:
+\begin{equation}\label{Directional Derivative Definition}
+    f'_{\vec{v}}(x_0, y_0, z_0) = 
+    \lim_{h \to 0}
+    \dfrac{
+        f(x_0 + h \cos \alpha, y_0 + h \cos \beta, z_0 + h \cos \gamma) - f(x_0, y_0, z_0)
+    }{h}
+\end{equation}
+
+\begin{equation}\label{Directional Derivative at a Point Definition}
+    f'_{\vec{v}}(x_0, y_0, z_0) = 
+    \lim_{h \to 0}
+    \dfrac{
+        f((x_0, y_0, z_0) + h\dfrac{\vec{v}}{\magn{\vec{v}}}) - f(x_0, y_0, z_0)
+    }{h}
+\end{equation}
+where \(\cos \alpha\), \(\cos \beta\), and \(\cos \gamma\) are the \textbf{directional cosines} of \(\vec{v}\).
+
+\subsection{Shortcut Formula for Directional Derivative}
+Using the gradient, the directional derivative can be computed as:
+\begin{equation}\label{Directional Derivative Shortcut}
+    f'_{\vec{v}}(x_0, y_0, z_0) = \vec{u} \cdot \nabla f(x_0, y_0, z_0)
+\end{equation}
+where:
+\begin{equation}\label{Gradient Definition}
+    \nabla f = \left\langle \dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z}, \cdots \right\rangle
+\end{equation}
+The gradient vector, \(\nabla f\), points in the direction of greatest increase of \(f\) and has a magnitude equal to the maximum rate of increase.
