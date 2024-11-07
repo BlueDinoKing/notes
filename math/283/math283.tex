@@ -8,6 +8,7 @@
 \usepackage{titlesec}    % Title formatting
 \usepackage{multicol}    % Multi-column formatting
 
+
 % Page layout settings
 \geometry{
   left=1in,
@@ -92,6 +93,209 @@
 }
 \parskip=.5cm
 \parindent=0cm
+
+
+%-------------------------------
+
+
+\chapter*{Seven Handouts}
+\section{Handout 1: Domain of Elementary Functions}
+
+\begin{alignat*}{2}
+    f &= \dfrac{u}{v} &\quad &\Rightarrow v \neq 0 \\
+    f &= \sqrt[2k]{u} &\quad &\Rightarrow u \geq 0 \quad (k \in \mathbb{N}) \\
+    f &= \log_{v}{u} &\quad &\Rightarrow u, v > 0, v \neq 1 \\
+    f &= \tan(u) &\quad &\Rightarrow u \neq \dfrac{\pi}{2} + k\pi \quad (k \in \mathbb{Z}) \\
+    f &= \cot(u) &\quad &\Rightarrow u \neq k\pi \quad (k \in \mathbb{Z}) \\
+    f &= \arcsin(u) &\quad &\Rightarrow -1 \leq u \leq 1 \\
+    f &= \arccos(u) &\quad &\Rightarrow -1 \leq u \leq 1 \\
+    f &= u^v &\quad &\Rightarrow u > 0 \text{ or } v \in \mathbb{N} 
+\end{alignat*}
+Important fact: All elementary functions are continuous on their domain except at the isolated points.
+$v \neq $ constant or $v = $ irrational constant.
+
+\section{Handout 2: Fundamental Formulas for Integration}
+
+\begin{alignat*}{8}
+    &\int u^n u' \, dx  &&= \int u^n \, du 
+    &&= \dfrac{u^{n+1}}{n+1} + C &\text{for } n \neq -1 \\
+    &\int \dfrac{u'}{u} \, dx &&= \int \dfrac{du}{u} 
+    &&= \ln|u| + C & \\
+    &\int a^u u' \, dx &&= \int a^u \, du 
+    &&= \dfrac{a^u}{\ln a} + C &\text{for } a > 0, a \neq 1 \\
+    &\int \sin(u) \, dx && &&= -\cos(u) + C & \\
+    &\int \cos(u) \, dx && &&= \sin(u) + C & \\
+    &\int \dfrac{1}{\cos^2(u)} \, dx 
+    &&= \int \sec^2(u) \, du &&= \tan(u) + C & \\
+    &\int \dfrac{u'dx}{u^2+a^2} && = \dfrac{1}{a} \arctan\left(\dfrac{u}{a}\right) + C_1 
+    &&= -\dfrac{1}{a}arccot\dfrac{u}{a} + C_2 & \\
+    &\int \dfrac{u'dx}{a^2-u^2} && &&= \dfrac{1}{2a}\ln\left|\dfrac{a+u}{a-u}\right| + C_1\\
+    &\int \dfrac{u'dx}{\sqrt{a^2-u^2}} &&= \arcsin\left(\dfrac{u}{a}\right) + C_1
+    &&= -\arccos\left(\dfrac{u}{a}\right) + C_2 & \\
+    &\int \dfrac{u'dx}{u\sqrt{u^2\pm a^2}} &&= \dfrac{1}{a}\ln\left|u+\sqrt{u^2\pm a^2}\right| + C_1
+    &&= -\dfrac{1}{a}\ln\left|u+\sqrt{u^2\pm a^2}\right| + C_2 & \\
+    &\int \dfrac{u'dx}{u\sqrt{a^2-u^2}} &&= \dfrac{1}{a}\arcsin\left(\dfrac{u}{a}\right) + C_1 &&= -\dfrac{1}{a}\arccos\left(\dfrac{u}{a}\right) + C_2
+\end{alignat*}
+
+\section{Handout 3: Formulas, definitions, and equations}
+\subsection{Basic Trigonometric Equations}
+\begin{alignat*}{8}
+    &\sin(x) = a 
+    &&\text{ for } a \in [-1, 1]
+    &&\Leftrightarrow x =(-1)^n\arcsin(a) + 2n\pi\quad 
+    &&n \in \mathbb{Z} \\
+    &\sin(x) = 0 
+    &&
+    &&\Leftrightarrow x = n\pi 
+    &&n \in \mathbb{Z} \\
+    &\sin(x) = \pm 1 &&
+    &&\Leftrightarrow x = \pm\dfrac{\pi}{2} + 2n\pi
+    &&n \in \mathbb{Z} \\
+    &\cos(x) = a 
+    &&\text{ for } a \in [-1, 1]
+    &&\Leftrightarrow x =(-1)^n\arccos(a) + 2n\pi 
+    &&n \in \mathbb{Z} \\
+    &\cos(x) = 0
+    &&
+    &&\Leftrightarrow x = \dfrac{\pi}{2} + n\pi
+    &&n \in \mathbb{Z} \\
+    &\cos(x) = \pm 1
+    &&
+    &&\Leftrightarrow x = 2n\pi
+    &&n \in \mathbb{Z} \\
+    &\tan(x) = a
+    &&\text{ for } a \in \mathbb{R}
+    &&\Leftrightarrow x = \arctan(a) + n\pi
+    &&n \in \mathbb{Z} \\
+    &\cot(x) = a
+    &&\text{ for } a \in \mathbb{R}
+    &&\Leftrightarrow x = \text{arccot}(a) + n\pi
+    &&n \in \mathbb{Z}
+\end{alignat*}
+    
+\subsection{Inverse Trigonometric Functions}
+
+\begin{alignat*}{8}
+    &\arcsin(x) = a
+    &&\text{ for } a \in [-\dfrac{\pi}{2}, \dfrac{\pi}{2}]
+    &&\Leftrightarrow x = \sin(a)
+    &&\text{ for } x \in [-1, 1] \\
+    &\arccos(x) = a
+    &&\text{ for } a \in [0, \pi]
+    &&\Leftrightarrow x = \cos(a)
+    &&\text{ for } x \in [-1, 1] \\
+    &\arctan(x) = a
+    &&\text{ for } a \in (-\dfrac{\pi}{2}, \dfrac{\pi}{2})
+    &&\Leftrightarrow x = \tan(a)
+    &&\text{ for } x \in \mathbb{R} \\
+    &\text{arccot}(x) = a
+    &&\text{ for } a \in (0, \pi)
+    &&\Leftrightarrow x = \cot(a)
+    &&\text{ for } x \in \mathbb{R}
+\end{alignat*}
+
+\subsection{Other Formulas}
+\[
+    \sqrt{a^2} = |a|, \qquad e^{a\ln(b)} = b^a, \qquad \log_a(b) = \dfrac{\ln(b)}{\ln(a)}
+\]
+\pagebreak
+\section{Handout 4: Derivatives}
+
+\[
+    f'(x) = \lim_{z \to x} \dfrac{f(z) - f(x)}{z-x} = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h}
+\]
+
+\begin{multicols}{2}
+    \begin{align*}
+        c' &= 0 \\
+        x' &= 1 \\
+        (u^n)' &= nu^{n-1}u' \\
+        (\sqrt{u})' &= \dfrac{u'}{2\sqrt{u}} \\
+        (\sin{u})' &= \cos{u}u' \\
+        (\cos{u})' &= -\sin{u}u' \\
+        (\tan{u})' &= \sec^2{u}u' \\
+        (\cot{u})' &= -\csc^2{u}u' \\
+        (\sec{u})' &= \sec{u}\tan{u}u' \\
+        (\csc{u})' &= -\csc{u}\cot{u}u' \\
+        (u\pm v)' &= u' \pm v' \\
+        (uv)' &= u'v + uv' \\  
+        (cu)' &= cu' \\
+        \left(\dfrac{u}{v}\right)' &= \dfrac{u'v - uv'}{v^2} \\
+        \left(\dfrac{c}{u^n}\right)' &= -\dfrac{ncu'}{u^{n+1}} \\
+    \end{align*}
+    \vfill\null
+    \columnbreak
+
+    \begin{align*}
+        (\dfrac{u}{c})' &= \dfrac{u'}{c} \\
+        (\dfrac{c}{u})' &= -\dfrac{cu'}{u^2} \\
+        (e^u)' &= e^u u' \\
+        (a^u)' &= a^u \ln(a)u' \\
+        (\ln{u}) &= \dfrac{u'}{u} \\
+        (\log_a{u})' &= \dfrac{u'}{u\ln(a)} \\
+        (\arcsin{u})' &= \dfrac{u'}{\sqrt{1-u^2}} \\
+        (\arccos{u})' &= -\dfrac{u'}{\sqrt{1-u^2}} \\
+        (\arctan{u})' &= \dfrac{u'}{1+u^2} \\
+        (\text{arccot}{u})' &= -\dfrac{u'}{1+u^2} \\
+    \end{align*}
+\end{multicols}
+\pagebreak
+\section{Handout 5: Trigonometry}
+
+\subsection{Trigonometric Identities}
+
+\begin{align*}
+    \sin\alpha\cos\beta &= \dfrac{1}{2}\sin{(\alpha-\beta)} + \dfrac{1}{2}\sin{(\alpha+\beta)} \\
+    \cos\alpha\cos\beta &= \dfrac{1}{2}\cos{(\alpha-\beta)} + \dfrac{1}{2}\cos{(\alpha+\beta)} \\
+    \sin\alpha\sin\beta &= -\dfrac{1}{2}\cos{(\alpha+\beta)} + \dfrac{1}{2}\cos{(\alpha-\beta)} \\
+    \vspace{.25in}\\
+    \cos^2\alpha &= \dfrac{1+\cos{2\alpha}}{2} \\
+    \sin^2\alpha &= \dfrac{1-\cos{2\alpha}}{2} \\
+    \vspace{.25in}\\
+    \sin{(\alpha \pm \beta)} &= \sin\alpha\cos\beta \mp \cos\alpha\sin\beta \\
+    \cos{(\alpha \pm \beta)} &= \cos\alpha\cos\beta \mp \sin\alpha\sin\beta \\
+    \tan{(\alpha \pm \beta)} &= \dfrac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}\\
+    \vspace{.25in}\\
+    \sin{(2\alpha)} &= 2\sin\alpha\cos\alpha \\
+    \cos{(2\alpha)} &= \cos^2\alpha - \sin^2\alpha \\
+    \tan{(2\alpha)} &= \dfrac{2\tan\alpha}{1-\tan^2\alpha}\\
+    \vspace{.25in}\\
+    \sin(\alpha) \pm \sin(\beta) &= 2\sin\left(\dfrac{\alpha \pm \beta}{2}\right)\cos\left(\dfrac{\alpha \mp \beta}{2}\right) \\
+    \cos(\alpha) \pm \cos(\beta) &= 2\cos\left(\dfrac{\alpha + \beta}{2}\right)\cos\left(\dfrac{\alpha \mp \beta}{2}\right) \\
+\end{align*}
+How to exit trigonometry:
+\begin{alignat*}{8}
+    \tan{\dfrac{x}{2}} = y &\Rightarrow \sin x &&= \dfrac{2y}{1+y^2}, &\cos x &= \dfrac{1-y^2}{1+y^2}, & dx &= \dfrac{2dy}{1+y^2} &&\text{ for } x \neq (2k+1)\pi\\
+    \tan x = y &\Rightarrow \sin^2 x &&= \dfrac{y}{1+y^2},\,\, &\cos^2 x &= \dfrac{1}{1+y^2},\,\, & dx &= \dfrac{dy}{1+y^2} &&\text{ for } x \neq \dfrac{\pi}{2} + k\pi\\
+\end{alignat*}
+\pagebreak
+\subsection{Trigonometric Chart}
+\begingroup
+\linespread{2}\selectfont  % Adjust the line spacing to 1.5 times the normal
+
+\begin{table*}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Angle} & \textbf{Sine} & \textbf{Cosine} & \textbf{Tangent} & \textbf{Cotangent} \\
+\hline
+$-\dfrac{\pi}{2} - 0$ & $-1$ & $-0$ & $+\infty$ & $+0$ \\
+$-\dfrac{\pi}{2} + 0$ & $-1$ & $+0$ & $-\infty$ & $-0$ \\
+$-0$ & $-0$ & $1$ & $-0$ & $-\infty$ \\
+$+0$ & $+0$ & $1$ & $+0$ & $+\infty$ \\
+$\dfrac{\pi}{6}$ & $\dfrac{1}{2}$ & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{1}{\sqrt{3}}$ & $\sqrt{3}$ \\
+$\dfrac{\pi}{4}$ & $\dfrac{\sqrt{2}}{2}$ & $\dfrac{\sqrt{2}}{2}$ & $1$ & $1$ \\
+$\dfrac{\pi}{3}$ & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{1}{2}$ & $\sqrt{3}$ & $\dfrac{1}{\sqrt{3}}$ \\
+$\dfrac{\pi}{2} - 0$ & $1$ & $+0$ & $+\infty$ & $+0$ \\
+$\dfrac{\pi}{2} + 0$ & $1$ & $-0$ & $-\infty$ & $-0$ \\
+$\pi - 0$ & $+0$ & $-1$ & $-0$ & $-\infty$ \\
+$\pi + 0$ & $-0$ & $-1$ & $+0$ & $+\infty$ \\
+\hline
+\end{tabular}
+\end{table*}
+
+\endgroup
+
 %-------------------------------
 % Chapter 1: Elementary Functions
 %-------------------------------
@@ -185,31 +389,31 @@ Examples of lines:
 \subsection{Distance Between Two Points}
 
 The distance \(d_{PQ}\) between two points \( P(x_1, y_1, z_1) \) and \( Q(x_2, y_2, z_2) \) in three-dimensional space is given by:
-\begin{equation}
+\begin{equation}\label{Distance Between Two Points}
     d_{PQ} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
 \end{equation}
 
 \subsection{Midpoint Formula}
 
 The midpoint \(M_{PQ}\) between two points \( P(x_1, y_1, z_1) \) and \( Q(x_2, y_2, z_2) \) is calculated as:
-\begin{equation}
+\begin{equation}\label{Midpoint Formula}
     M_{PQ} = \left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}, \dfrac{z_1 + z_2}{2}\right)
 \end{equation}
 
 \subsection{Equation of a Sphere}
 
 A sphere centered at \(P(p, q, s)\) with radius \( r \) has the equation:
-\begin{equation}
+\begin{equation}\label{Equation of a Sphere}
     (x - p)^2 + (y - q)^2 + (z - s)^2 = r^2
 \end{equation}
 
 \subsection{Equation of a Circle}
-\begin{equation}
+\begin{equation}\label{Equation of a Circle}
     (x-h)^2 + (y-k)^2 = r^2
 \end{equation}
 
 \subsection{General Quadratic Equation with two unknowns}
-\begin{equation}
+\begin{equation}\label{General Quadratic Equation}
     Ax^2 + By^2 + Cxy + Dx + Ey + F = 0
 \end{equation}
 \[
@@ -219,30 +423,30 @@ A sphere centered at \(P(p, q, s)\) with radius \( r \) has the equation:
 
 An ellipsoid centered at \(P(h, k, l)\) is given by:
 
-\begin{equation}
+\begin{equation}\label{Equation of an Ellipsoid}
     \dfrac{(x-h)^2}{a^2} +  
     \dfrac{(y-k)^2}{b^2} + 
     \dfrac{(z-l)^2}{c^2} = 1
 \end{equation}
 
 \subsection{Equation of an Ellipse}
-\begin{equation}
+\begin{equation}\label{Equation of an Ellipse}
     \dfrac{(x-h)^2}{a^2} + \dfrac{(y-k)^2}{b^2} = 1
 \end{equation}
 
 \subsection{Equation of a Hyperbola}
-\begin{equation}
+\begin{equation}\label{Equation of a Hyperbola}
     \dfrac{(x-h)^2}{a^2} - \dfrac{(y-k)^2}{b^2} = 1
 \end{equation}
 \subsection{Equation of a Parabola}
-\begin{equation}
+\begin{equation}\label{Equation of a Parabola}
     (y-k)^2 = 4p(x-h)
 \end{equation}
 
 \subsection{Equations of a Line}
 \(\vec{a_l} = \langle a, b, c \rangle\) is the vector collinear to the line, and \(P(x_0, y_0, z_0)\) is a point on the line.
 \subsubsection{Parametric Form}
-\begin{equation}
+\begin{equation}\label{Parametric Form of a Line}
     l = 
     \begin{cases}
         x = x_0 + at\\
@@ -252,46 +456,46 @@ An ellipsoid centered at \(P(h, k, l)\) is given by:
 \end{equation}
 
 \subsubsection{Normal Form}
-\begin{equation}
+\begin{equation}\label{Normal Form of a Line}
     \dfrac{x-x_0}{a} = \dfrac{y-y_0}{b} = \dfrac{z-z_0}{c}
 \end{equation}
 
 \subsection{Equations of a Plane}
 \(\vec{a_l} = \langle a, b, c \rangle\) is the vector normal to the plane, and \(P(x_0, y_0, z_0)\) is a point on the plane.
 \subsubsection{Point-Normal/Scalar Form}
-\begin{equation}
+\begin{equation}\label{Point-Normal Form of a Plane}
     a(x-x_0) + b(y-y_0) + c(z-z_0) = 0
 \end{equation}
 
 \section{Quadric Surfaces}
 
 \subsection{Ellipsoid}
-\begin{equation}
+\begin{equation}\label{Equation of an Ellipsoid}
     \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} + \dfrac{z^2}{c^2} = 1
 \end{equation}
 
 \subsection{Hyperboloid of One Sheet}
-\begin{equation}
+\begin{equation}\label{Equation of a Hyperboloid of One Sheet}
     \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} - \dfrac{z^2}{c^2} = 1
 \end{equation}
 
 \subsection{Hyperboloid of Two Sheets}
-\begin{equation}
+\begin{equation}\label{Equation of a Hyperboloid of Two Sheets}
     -\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} + \dfrac{z^2}{c^2} = 1
 \end{equation}
 
 \subsection{Elliptic Cone}
-\begin{equation}
+\begin{equation}\label{Equation of an Elliptic Cone}
     \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} - \dfrac{z^2}{c^2} = 0
 \end{equation}
 
 \subsection{Elliptic Paraboloid}
-\begin{equation}
+\begin{equation}\label{Equation of an Elliptic Paraboloid}
     \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = z
 \end{equation}
 
 \subsection{Hyperbolic Paraboloid}
-\begin{equation}
+\begin{equation}\label{Equation of a Hyperbolic Paraboloid}
     \dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = z
 \end{equation}
 
@@ -413,6 +617,17 @@ Graphing dimensions change based on the variables involved:
 \chapter{Functions of Several Variables}
 Functions of several variables extend the concept of functions to higher dimensions, allowing for more complex mappings and dependencies.
 
+\section{Continuity}
+
+4 conditions for continuity of $f(x, y)$ at a point $(x_0, y_0)$:
+
+\begin{itemize}
+    \item $(x_0, y_0)$ is in the domain of $f(x, y)$
+    \item $(x_0, y_0)$ is not an isolated point
+    \item $\lim_{\substack{x \to x_0\\y \to y_0}} f(x, y)$ exists
+    \item $\lim_{\substack{x \to x_0\\y \to y_0}} f(x, y) = f(x_0, y_0)$
+\end{itemize}
+
 % Example content for introduction, definitions, and properties of functions of several variables.
 
 %-------------------------------
@@ -442,9 +657,9 @@ d(\arctan(u)) = \dfrac{du}{1+u^2}\text{ but }\arctan(u') = \dfrac{u'}{1+u^2}
 
 \subsubsection{Error Estimation}
 The error in a function \(f(x)\) can be estimated by the differential:
-\[
+\begin{equation}\label{Error Estimation}
     df = f'(x)dx
-\]
+\end{equation}
 This is useful for approximating the error in a function given a small change in the variable.
 
 \subsubsection{Example of Error Estimation}
@@ -462,9 +677,9 @@ Given the equation $A = lw$, $l = 5m$, $w = 3m$, $dl = 0.001m$, and $dw = 0.001m
 \]
 \subsubsection{Linearization}
 The linearization of a function \(f(x)\) at a point \(x_0\) is given by:
-\[
+\begin{equation}\label{Linearization}
     L(x) = f(x_0) + f'(x_0)(x-x_0)
-\]
+\end{equation}
 \[
     f(x) \approx L(x) \text{ for } x \text{ near } x_0
 \]
@@ -488,14 +703,14 @@ The partial derivative of a function \(f(x, y)\) with respect to \(x\) is denote
 \]
 This \textbf{not} a fraction. $\partial x$ does not exist, and neither does $\partial f$.
 
-\begin{equation}
+\begin{equation}\label{Partial Derivative at a Point Definition}
     \pd{f}{x}(x_0, y_0) = 
     \lim_{x \to x_0} \dfrac{f(x, y_0) - f(x_0, y_0)}{x-x_0}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{Partial Derivative delfdelx Definition}
     \pd{f}{x} = \lim_{h \to 0} \dfrac{f(x+h, y) - f(x, y)}{h}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{Partial Derivative delfdely Definition}
     \pd{f}{y} = \lim_{h \to 0} \dfrac{f(x, y+h) - f(x, y)}{h}
 \end{equation}
 
@@ -504,22 +719,22 @@ The partial derivative of a function \(f(x, y, \cdots)\) with respect to \(x\) c
 
 \subsection{All Defintions of First and Second Partial Derivatives}
 You sometimes have to use the definition of a partial derivative to find the actual value of the partial derivative. 
-\begin{equation}
+\begin{equation} \label{Partial Derivative f_x Definition}
     f_x = \pd{f}{x} = \lim_{h \to 0} \dfrac{f(x+h, y) - f(x, y)}{h}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{Partial Derivative f_y Definition}
     f_y = \pd{f}{y} = \lim_{h \to 0} \dfrac{f(x, y+h) - f(x, y)}{h}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{Second Partial Derivative f_xx Definition}
     f_{xy} = \pdm{f}{x}{y} = \lim_{h \to 0} \dfrac{\pd{f}{y}(x+h, y) - \pd{f}{y}(x, y)}{h}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{Second Partial Derivative f_yx Definition}
     f_{yx} = \pdm{f}{y}{x} = \lim_{h \to 0} \dfrac{\pd{f}{x}(x, y+h) - \pd{f}{x}(x, y)}{h}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{Second Partial Derivative f_xx Definition}
     f_{xx} = \pdm{f}{x}{x} = \lim_{h \to 0} \dfrac{\pd{f}{x}(x+h, y) - \pd{f}{x}(x, y)}{h}
 \end{equation}
-\begin{equation}
+\begin{equation}\label{Second Partial Derivative f_yy Definition}
     f_{yy} = \pdm{f}{y}{y} = \lim_{h \to 0} \dfrac{\pd{f}{y}(x, y+h) - \pd{f}{y}(x, y)}{h}
 \end{equation}
 
@@ -653,24 +868,48 @@ Given two functions \(f(x, y)\) and \(f(a, b)\) where $a$ and $b$ are dependent 
 The partial derivative of the composite function with respect to the first new variable is equal to the partial derivative of the composite function with respect to the first old variable multiplied by partial derivative of the same old variable with respect to the current new variable plus.
 
 \subsection{Examples:}
-Find $\pd{z}{r}$:
-\begin{align*}
-    z(r,\theta) &= f(x, y)\\
-    \text{where } x &= r\cos\theta,\\
-    \text{ and } y &= r\sin\theta\\
-    \pd{z}{r} &= \pd{f}{x}\pd{x}{r} + \pd{f}{y}\pd{y}{r}\\
-    &= \pd{f}{x}\cos\theta + \pd{f}{y}\sin\theta
-\end{align*}
-We do not have $\pd{f}{x}$ or $\pd{f}{y}$, so we cannot find the exact value of $\pd{z}{r}$.
 
-\[
-g(u, v, \ldots) = f(x, y, \ldots)
-\]
-\begin{align*}
-    &\pd{g}{u} = \pd{f}{x}\pd{x}{u} + \pd{f}{y}\pd{y}{u} + \ldots\\
-    &\pd{g}{v} = \pd{f}{x}\pd{x}{v} + \pd{f}{y}\pd{y}{v} + \ldots\\
-    &\,\,\,\vdots
-\end{align*}
+\begin{enumerate}
+    
+    \item Find $\pd{z}{r}$:
+        \begin{align*}
+        z(r,\theta) &= f(x, y)\\
+        \text{where } x &= r\cos\theta,\\
+        \text{ and } y &= r\sin\theta\\
+        \pd{z}{r} &= \pd{f}{x}\pd{x}{r} + \pd{f}{y}\pd{y}{r}\\
+        &= \pd{f}{x}\cos\theta + \pd{f}{y}\sin\theta
+    \end{align*}
+    We do not have $\pd{f}{x}$ or $\pd{f}{y}$, so we cannot find the exact value of $\pd{z}{r}$.
+
+    \item $g(u, v, \ldots) = f(x, y, \ldots)$
+    
+    \begin{align*}
+        &\pd{g}{u} = \pd{f}{x}\pd{x}{u} + \pd{f}{y}\pd{y}{u} + \ldots\\
+        &\pd{g}{v} = \pd{f}{x}\pd{x}{v} + \pd{f}{y}\pd{y}{v} + \ldots\\
+        &\,\,\,\vdots
+    \end{align*}
+
+    \item $z = f(x, y)$, $x = s + t$, $y = s - t$
+    
+        
+        \[
+            \text{Show that: }\quad \left(\pd{z}{x}\right)^2 - \left(\pd{z}{y}\right)^2 = \pd{z}{s} \cdot \pd{z}{t}
+        \]
+        \[
+            z(s, t) = z(x, y)
+        \]
+        \begin{align*}
+            \pd{z}{s} &= \pd{z}{x}\cdot\pd{x}{s} + \pd{z}{y}\cdot\pd{y}{s}\\
+            &= \pd{z}{x} + \pd{z}{y}\\\\
+            \pd{z}{t} &= \pd{z}{x}\cdot\pd{x}{t} + \pd{z}{y}\cdot\pd{y}{t}\\
+            &= \pd{z}{x} - \pd{z}{y}\\\\
+            \pd{z}{s}\cdot\pd{z}{t} &= \left(\pd{z}{x} + \pd{z}{y}\right)\left(\pd{z}{x} - \pd{z}{y}\right)\\
+            &= \left(\pd{z}{x}\right)^2 - \left(\pd{z}{y}\right)^2\\
+            \therefore \pd{z}{s}\cdot\pd{z}{t} &= \left(\pd{z}{x}\right)^2 - \left(\pd{z}{y}\right)^2
+        \end{align*}
+
+\end{enumerate}
+
 
 % Example content for partial derivative rules, examples, and applications.
 
@@ -713,9 +952,9 @@ In summary:
 
 \subsection{Vector Addition}
 You \textbf{cannot} add a vector and a scalar. However, you can add two vectors together. Vector addition combines two vectors \(\vec{u}\) and \(\vec{v}\) to produce a resultant vector \(\vec{w}\):
-\[
+\begin{equation}\label{Vector Addition}
     \vec{w} = \vec{u} + \vec{v} = \langle u_x + v_x, u_y + v_y, u_z + v_z \rangle
-\]
+\end{equation}
 For example, given these vectors: $\vcomponents{u}{1}{2}{3}$, and $\vcomponents{v}{4}{5}{6}$
 \[
 \vec{u} + \vec{v} = \langle 1 + 4, 2 + 5, 3 + 6 \rangle = \langle 5, 7, 9 \rangle
@@ -723,9 +962,10 @@ For example, given these vectors: $\vcomponents{u}{1}{2}{3}$, and $\vcomponents{
 
 \subsection{Vector Scalar Multiplication}
 A vector and scalar can be multiplied, but two vectors cannot be multiplied in the traditional sense.
-\[
+
+\begin{equation}\label{Vector Scalar Multiplication}
     k\vec{u} = \langle ku_x, ku_y, ku_z \rangle
-\]
+\end{equation}
 
 
 \subsection{Scalar Multiples}
@@ -749,9 +989,9 @@ k\vec{u} = \langle ku_x, ku_y, ku_z \rangle
 
 \section{Dot Product}
 The dot product is an operation between two vectors \(\vec{u}\) and \(\vec{v}\) that produces a scalar, and is calculated as:
-\[
+\begin{equation}\label{Dot Product}
     \vec{u} \cdot \vec{v} = u_x v_x + u_y v_y + \cdots + u_n v_n = ||\vec{u}|| \, ||\vec{v}|| \cos{\theta}
-\]
+\end{equation}
 where \(\theta\) is the angle between \(\vec{u}\) and \(\vec{v}\). The dot product is \textbf{commutative}:
 \[
     \vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}
@@ -772,11 +1012,54 @@ where \(\theta\) is the angle between \(\vec{u}\) and \(\vec{v}\). The dot produ
         \vec{a} \cdot \vec{b} = 0 \iff \vec{a} \perp \vec{b}
     \]
     For example, if \(\vec{a}_{L_1} \cdot \vec{a}_{L_2} = 0\), then lines \(L_1\) and \(L_2\) are perpendicular.
+
+    \item \textbf{Finding the Angle Between Two Vectors}:
+    \[
+        \cos{\theta} = \dfrac{\vec{u} \cdot \vec{v}}{||\vec{u}|| \, ||\vec{v}||}
+    \]
+
+    \item \textbf{Projection of a Vector}:
+    The projection of \(\vec{u}\) onto \(\vec{v}\) is:
+    \[
+        \vec{proj}_{\vec{v}} \vec{u} = \dfrac{\vec{u} \cdot \vec{v}}{||\vec{v}||^2} \vec{v}
+    \]
+
+    \item \textbf{Work Done by a Force}:
+    The work done by a force \(\vec{F}\) acting on an object displaced by \(\vec{d}\) is:
+    \[
+        W = \vec{F} \cdot \vec{d}
+    \]
+
+    \item \textbf{Orthogonal Projections}:
+    The orthogonal projection of \(\vec{u}\) onto \(\vec{v}\) is:
+    \[
+        \vec{proj}_{\vec{v}} \vec{u} = \dfrac{\vec{u} \cdot \vec{v}}{\vec{v} \cdot \vec{v}} \vec{v}
+    \]
+
+    \item \textbf{Finding the Angle Between Two Planes}:
+    The angle between two planes with normal vectors \(\vec{n_1}\) and \(\vec{n_2}\) is:
+    \[
+        \cos{\theta} = \dfrac{\vec{n_1} \cdot \vec{n_2}}{||\vec{n_1}|| \, ||\vec{n_2}||}
+    \]
+
+    \item \textbf{Finding the Distance Between a Point and a Plane}:
+    The distance between a point \(P\) and a plane with normal vector \(\vec{n}\) is:
+    \[
+        \text{dist}(P, \Pi) = \dfrac{|\vec{P} \cdot \vec{n}|}{||\vec{n}||}
+    \]
+
+    \item \textbf{Finding the Distance Between Two Parallel Lines}:
+    The distance between two parallel lines with direction vectors \(\vec{v_1}\) and \(\vec{v_2}\) is:
+    \[
+        \text{dist}(L_1, L_2) = \dfrac{|\vec{v_1} \cdot \vec{v_2}|}{||\vec{v_1}||}
+    \]
+
+    
 \end{enumerate}
 
 \section{Cross Product}
 The cross product is an operation on two 3D vectors that yields a vector perpendicular to both:
-\[
+\begin{equation}\label{Cross Product}
     \vec{u} \times \vec{v} = 
     \begin{vmatrix}
         \uniti & \unitj & \unitk \\
@@ -784,7 +1067,7 @@ The cross product is an operation on two 3D vectors that yields a vector perpend
         v_x & v_y & v_z \\
     \end{vmatrix} 
     = \langle u_y v_z - u_z v_y, \; u_z v_x - u_x v_z, \; u_x v_y - u_y v_x \rangle
-\]
+\end{equation}
 This resultant vector \(\vec{w} = \vec{u} \times \vec{v}\) is perpendicular to both \(\vec{u}\) and \(\vec{v}\).
 \subsection{Shortcut for Cross Product}
 
@@ -821,9 +1104,12 @@ Then, calculate each component of the cross product by making crosses between $u
 \end{itemize}
 \section{Triple Scalar Product}
 The triple scalar product of three vectors \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\) is defined as:
-\[
+
+\begin{equation}\label{Triple Scalar Product}
+    \tsp{u}{v}{w} = 
     \vec{u} \cdot (\vec{v} \times \vec{w}) = \vec{v} \cdot (\vec{w} \times \vec{u}) = \vec{w} \cdot (\vec{u} \times \vec{v})
-\]
+\end{equation}
+
 It is often shown as $\tsp{u}{v}{w}$ and has a few niche uses.
 \begin{itemize}
     \item \textbf{The volume of a parallelepiped with sides \(\vec{u}\), \(\vec{v}\), and \(\vec{w}\).}
@@ -848,30 +1134,32 @@ It is often shown as $\tsp{u}{v}{w}$ and has a few niche uses.
 \section{Directional Derivatives}
 \subsection{Definition}
 The directional derivative of \(f\) at a point \((x_0, y_0, z_0)\) in the direction of a vector \(\vec{v}\) is defined as:
-\[
+\begin{equation}\label{Directional Derivative Definition}
     f'_{\vec{v}}(x_0, y_0, z_0) = 
     \lim_{h \to 0}
     \dfrac{
         f(x_0 + h \cos \alpha, y_0 + h \cos \beta, z_0 + h \cos \gamma) - f(x_0, y_0, z_0)
     }{h}
-\]
-\[
+\end{equation}
+
+\begin{equation}\label{Directional Derivative at a Point Definition}
     f'_{\vec{v}}(x_0, y_0, z_0) = 
     \lim_{h \to 0}
     \dfrac{
-        f((x_0, y_0, z_0) + h\dfrac{\vec{v}}{\magn{\vec{v}}}) - f(x_0, y_0, z_0)}{h}
-\]
+        f((x_0, y_0, z_0) + h\dfrac{\vec{v}}{\magn{\vec{v}}}) - f(x_0, y_0, z_0)
+    }{h}
+\end{equation}
 where \(\cos \alpha\), \(\cos \beta\), and \(\cos \gamma\) are the \textbf{directional cosines} of \(\vec{v}\).
 
 \subsection{Shortcut Formula for Directional Derivative}
 Using the gradient, the directional derivative can be computed as:
-\[
+\begin{equation}\label{Directional Derivative Shortcut}
     f'_{\vec{v}}(x_0, y_0, z_0) = \vec{u} \cdot \nabla f(x_0, y_0, z_0)
-\]
+\end{equation}
 where:
-\[
-    \nabla f = \left\langle \dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z} \right\rangle
-\]
+\begin{equation}\label{Gradient Definition}
+    \nabla f = \left\langle \dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z}, \cdots \right\rangle
+\end{equation}
 The gradient vector, \(\nabla f\), points in the direction of greatest increase of \(f\) and has a magnitude equal to the maximum rate of increase.
 
 \end{document}

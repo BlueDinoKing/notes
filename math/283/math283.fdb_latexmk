@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730929411.73606 "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" "math283.pdf" "math283" 1730929412.86239 0
+["pdflatex"] 1730946966.69265 "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" "math283.pdf" "math283" 1730946967.86567 0
   "C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730915284 1564848 8844c5dd88c3c540f98510ecde7cc446 ""
   "C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1730744745 14064 f549596526c3f58c6bd6d28eabc9a490 ""
   "C:/Users/silas.349763/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730695910 24228391 3223ffb79cd0c9bd0f575a210e2e9549 ""
@@ -25,6 +25,7 @@
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1247596666 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
@@ -33,6 +34,7 @@
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1247596667 32587 65067f817f408bc71a7312f3d9828a9b ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
+  "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -62,14 +64,14 @@
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
-  "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" 1730929410 30850 7a36113bbe699dc4d361edc897682ba2 ""
+  "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" 1730946964 43537 ca12d5ac1ce3ffdd2937197a06844757 ""
   "domain1.png" 1730869810 30874 be565785521118fd9f49ff83b7f84001 ""
   "domain2.png" 1730913116 12599 b8045b875f2ccae4b3621bc0f33cd2e0 ""
   "graph1.png" 1730870900 87514 95197b603af4404e351a13092650e0ec ""
   "graph2.png" 1730913210 21927 8c8b3ea4628e6a058ce5ef2738fb3167 ""
-  "math283.aux" 1730929412 8228 01ed37c0143c37e5a889bf07a232c4c7 "pdflatex"
-  "math283.tex" 1730929410 30850 7a36113bbe699dc4d361edc897682ba2 ""
-  "math283.toc" 1730929412 4910 969eba3a3d979a946d1ef17727af7f3f "pdflatex"
+  "math283.aux" 1730946967 12774 edfd3f753ad3f60d9e4437c7bfeaa2a1 "pdflatex"
+  "math283.tex" 1730946964 43537 ca12d5ac1ce3ffdd2937197a06844757 ""
+  "math283.toc" 1730946967 5814 dd2a2d4866a56cd46f2506a5ac569a8e "pdflatex"
   (generated)
   "math283.aux"
   "math283.log"
