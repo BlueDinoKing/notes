@@ -3,6 +3,7 @@
 This repository contains my LaTeX notes for the following courses.
 
 ## Engineering
+### Electrical Engineering
 - **[EE220: Circuits 1](ee/ee220.pdf)** - CSN
 
 ## Physics
