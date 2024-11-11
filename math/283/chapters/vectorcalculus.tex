@@ -224,7 +224,11 @@ The directional derivative of \(f\) at a point \((x_0, y_0, z_0)\) in the direct
     }{h}
 \end{equation}
 where \(\cos \alpha\), \(\cos \beta\), and \(\cos \gamma\) are the \textbf{directional cosines} of \(\vec{v}\).
-
+\begin{align*}
+    \cos \alpha &= \dfrac{v_x}{||\vec{v}||} \\
+    \cos \beta &= \dfrac{v_y}{||\vec{v}||} \\
+    \cos \gamma &= \dfrac{v_z}{||\vec{v}||}
+\end{align*}
 \subsection{Shortcut Formula for Directional Derivative}
 Using the gradient, the directional derivative can be computed as:
 \begin{equation}\label{Directional Derivative Shortcut}
@@ -235,3 +239,59 @@ where:
     \nabla f = \left\langle \dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z}, \cdots \right\rangle
 \end{equation}
 The gradient vector, \(\nabla f\), points in the direction of greatest increase of \(f\) and has a magnitude equal to the maximum rate of increase.
+
+The shortcut only works when $f$ is differentiable at $(x_0, y_0, z_0)$.
+
+\subsection{Properties of Directional Derivatives}
+The maximum value of the directional derivative is the magnitude of the gradient vector.
+\begin{equation} \label{Maximum Value of Directional Derivative}
+    \max f'_{\vec{v}}(x_0, y_0, z_0) = ||\nabla f(x_0, y_0, z_0)|| = \max \left\{ \dfrac{df}{d\vec{v}} \right\}
+\end{equation}
+
+The directional derivative is zero when the input vector is perpendicular to the gradient.
+
+\begin{equation}
+    \vec{v} \perp \nabla f \implies f'_{\vec{v}}(P_0) = 0
+\end{equation}
+\pagebreak
+
+\subsection{Examples}
+
+Given the following function $f$:
+\[
+    f(x, y, z) = z\ln{(5x+3y-1)} + x^2 \arctan{z} + y^3 + 4
+\]
+With the point $P_0$ and vector $\vec{v}$:
+\[
+    P_0(1, -1, 0), \qquad\vec{v} = \langle 2, -1, 2 \rangle
+\]
+\[ df = dz \ln{(5x+3y-1)} + z \dfrac{5dx + 3dy}{5x+3y-1} + 2x \dfrac{dz}{1+z^2} + 3y^2 dy + dx 2x\arctan{z} 
+\]
+Find the directional derivative of $f$ at $P_0$ in the direction of $\vec{v}$.
+\begin{align*}
+    \nabla f &= \begin{bmatrix}
+        \dfrac{\partial f}{\partial x} \\
+        \vspace{.025cm}\\
+        \dfrac{\partial f}{\partial y} \\
+        \vspace{.025cm}\\
+        \dfrac{\partial f}{\partial z}
+    \end{bmatrix} = 
+    \begin{bmatrix}
+        &\dfrac{5z}{5x+3y-1} + 2x\arctan{z} \\
+        &\vspace{.025cm}\\
+        &\dfrac{3z}{5x+3y-1} + 3y^2 \\
+        &\vspace{.025cm}\\
+        &\dfrac{2x}{1+z^2} + \ln(5x+3y-1)
+    \end{bmatrix} \\
+    \vspace{1cm}\\
+    \nabla f(1, -1, 0) &= \begin{bmatrix}
+        &0 + 2\arctan{0} \\
+        &0 + 3 \\
+        &0 + 1
+    \end{bmatrix} = 
+    \left<0, 3, 1\right> \\ 
+    \vspace{1cm}\\
+    \dfrac{\vec{v}}{\magn{\vec{v}}} \cdot \nabla f(1, -1, 0) &= \dfrac{\left<2, -1, 2\right> \cdot \left<0, 3, 1\right>}{3} = \dfrac{0 - 3 + 2}{3} = \dfrac{-1}{3} \\ 
+    \therefore f'_{\vec{v}}(P_0) &= \dfrac{-1}{3}
+\end{align*}
+The directional derivative of $f$ at $P_0$ in the direction of $\vec{v}$ is $-\dfrac{1}{3}$ while the maximum is $\magn{\nabla f(P_0)} = \sqrt{10}$.

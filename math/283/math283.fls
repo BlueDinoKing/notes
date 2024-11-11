@@ -158,6 +158,9 @@ INPUT chapters\derivatives.tex
 INPUT .\chapters\vectorcalculus.tex
 INPUT .\chapters\vectorcalculus.tex
 INPUT chapters\vectorcalculus.tex
+INPUT .\chapters\integrals.tex
+INPUT .\chapters\integrals.tex
+INPUT chapters\integrals.tex
 INPUT math283.aux
 INPUT C:\Users\silas.349763\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\silas.349763\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk

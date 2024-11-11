@@ -1,2 +1,36 @@
 \chapter{Multiple Integrals}
 Multiple integrals extend single-variable integration to functions of several variables, useful in areas such as volume and area calculations.
+\section{Line Integral}
+
+\subsection{Deriving the Line Integral}
+Given the parametric equation G: \(x(t), y(t), t \in [a, b]\) and the function \(f(x,y)\), find the area between the parametric curve and the function.
+
+How do we find this? Let's write an integral for this.
+
+\[
+    \int_{t=a}^{t=b} f(x,y) dS 
+\]
+$dS$ is the change in the parametric curve's arc length. Given $dx$ and $dy$, \(dS = \sqrt{dx^2 + dy^2}\, dt\), so we can rewrite the earlier equation as
+  
+\[
+    \int_{a}^{b} f(x, y) \sqrt{dx^2+dy^2}\, dt
+\]
+
+This can also be rewritten as 
+\[
+    \int_a^b f(x,y) \sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}\, dt
+\]
+\pagebreak
+\subsection{Examples}
+Given the parametric function $x = \cos{t}, \, y = \sin{t}, \,  t \in [0, \pi/2]$ and $f(x,y) = xy$ find the line integral.
+
+
+\begin{align*}
+    \dfrac{dx}{dt} &= -\sin{t}\qquad\qquad&\\
+    \dfrac{dy}{dt} &= \cos{t}\\
+    A &= \int_{0}^{\pi/2} \sin{t}\cos{t} \sqrt{\sin^2{t}+\cos^2{t}}\, dt\\
+    &= \int_{0}^{\pi/2}  \sin{t}\cos{t} \cdot 1 \,dt\\
+    &= \int_{0}^{1} \dfrac{u}{\sin{t}} \cdot {\sin{t}}\, du\\
+    &= \left[\dfrac{u^2}{2}\right]_{u=0}^{u=1}\\
+    A &= \dfrac{1}{2}
+\end{align*}
