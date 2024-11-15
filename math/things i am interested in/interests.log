@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.3)  13 NOV 2024 10:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.3)  13 NOV 2024 16:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/silas.349763/Desktop/Math/math/283/math283.tex
-(c:/Users/silas.349763/Desktop/Math/math/283/math283.tex
+**"c:/Users/silas.349763/Desktop/Math/math/things i am interested in/interests.tex"
+(c:/Users/silas.349763/Desktop/Math/math/things i am interested in/interests.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\silas.349763\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -229,15 +229,8 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box100
-) (math283.aux
-
-LaTeX Warning: Label `Equation of an Ellipsoid' multiply defined.
-
-
-LaTeX Warning: Label `Second Partial Derivative f_xx Definition' multiply defined.
-
-)
-\openout1 = `math283.aux'.
+) (interests.aux)
+\openout1 = `interests.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
@@ -316,117 +309,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (math283.toc [2
-
-])
+{C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+No file interests.toc.
 \tf@toc=\write3
-\openout3 = `math283.toc'.
-
- (other/handouts.tex [3] [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-Underfull \vbox (badness 1735) has occurred while \output is active []
-
- [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]) (chapters/elementaryfunctions.tex [11]
-Chapter 1.
-) (chapters/dimensionalanalysis.tex [12
-
-]
-Chapter 2.
-[13
-
-] [14] [15] [16] [17] [18]
-<domain1.png, id=72, 420.97275pt x 350.5095pt>
-File: domain1.png Graphic file (type png)
-<use domain1.png>
-Package pdftex.def Info: domain1.png  used on input line 256.
-(pdftex.def)             Requested size: 135.89174pt x 113.14407pt.
-<graph1.png, id=73, 595.023pt x 404.712pt>
-File: graph1.png Graphic file (type png)
-<use graph1.png>
-Package pdftex.def Info: graph1.png  used on input line 264.
-(pdftex.def)             Requested size: 226.48395pt x 154.04535pt.
- [19 <./domain1.png (PNG copy)> <./graph1.png (PNG copy)>]
-<domain2.png, id=78, 262.581pt x 259.56975pt>
-File: domain2.png Graphic file (type png)
-<use domain2.png>
-Package pdftex.def Info: domain2.png  used on input line 276.
-(pdftex.def)             Requested size: 135.89174pt x 134.33144pt.
-<graph2.png, id=79, 422.17725pt x 393.8715pt>
-File: graph2.png Graphic file (type png)
-<use graph2.png>
-Package pdftex.def Info: graph2.png  used on input line 281.
-(pdftex.def)             Requested size: 226.48395pt x 211.29913pt.
- [20 <./domain2.png (PNG copy)> <./graph2.png (PNG copy)>]) (chapters/multivariable.tex [21]
-Chapter 3.
-[22
-
-]) (chapters/derivatives.tex [23]
-Chapter 4.
-[24
-
-] [25] [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27] [28] [29]) (chapters/vectorcalculus.tex [30]
-Chapter 5.
-
-Underfull \vbox (badness 5711) has occurred while \output is active []
-
- [31
-
-] [32] [33] [34] [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]) (chapters/integrals.tex [37]
-Chapter 6.
-
-Overfull \hbox (10.84113pt too wide) in paragraph at lines 12--14
-$\OML/cmm/m/it/12 dS$ \OT1/cmr/m/n/12 is the change in the para-met-ric curve's arc length. Given $\OML/cmm/m/it/12 dx$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 dy$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 dS \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 dt$\OT1/cmr/m/n/12 ,
- []
+\openout3 = `interests.toc'.
 
 
-Underfull \vbox (badness 3803) has occurred while \output is active []
+! LaTeX Error: File `chapters/lambdacalculus.tex' not found.
 
- [38
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
-]) [39] (math283.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
- ***********
+Enter file name: 
+c:/Users/silas.349763/Desktop/Math/math/things i am interested in/interests.tex:100: Emergency stop.
+<read *> 
+         
+l.100 \input{chapters/lambdacalculus.tex}
+                                         ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 3905 strings out of 474485
- 59944 string characters out of 5740430
- 1971542 words of memory out of 5000000
- 26139 multiletter control sequences out of 15000+600000
- 567476 words of font info for 72 fonts, out of 8000000 for 9000
+ 3722 strings out of 474485
+ 55438 string characters out of 5740430
+ 1925542 words of memory out of 5000000
+ 25993 multiletter control sequences out of 15000+600000
+ 561572 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,69p,402b,335s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\silas.349763\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on math283.pdf (39 pages, 404654 bytes).
-PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 57i,6n,65p,310b,203s stack positions out of 10000i,1000n,20000p,200000b,200000s
+c:/Users/silas.349763/Desktop/Math/math/things i am interested in/interests.tex:100:  ==> Fatal error occurred, no output PDF file produced!

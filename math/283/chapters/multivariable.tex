@@ -31,3 +31,40 @@ Functions of several variables extend the concept of functions to higher dimensi
     -\sin x \\ 1 
     \end{bmatrix}$
 \end{itemize}
+
+\section{Finding the Tangent Plane}
+Given a function $f(x, y)$, the equation of the tangent plane at a point $(x_0, y_0, z_0)$, where $z_0 = f(x_0, y_0)$, is given by:
+
+\begin{equation}
+    z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
+\end{equation}
+
+\noindent Here, $f_x$ and $f_y$ are the partial derivatives of $f(x, y)$ with respect to $x$ and $y$ respectively, evaluated at $(x_0, y_0)$. To find the tangent plane:
+
+\begin{enumerate}
+    \item Find $f_x(x, y)$ and $f_y(x, y)$.
+    \item Evaluate $f_x(x_0, y_0)$ and $f_y(x_0, y_0)$.
+    \item Substitute into the tangent plane equation.
+\end{enumerate}
+
+\section{Finding Critical Points}
+To find the critical points of a function $f(x, y)$:
+
+\begin{enumerate}
+    \item Compute the first partial derivatives $f_x(x, y)$ and $f_y(x, y)$.
+    \item Set the equations $f_x(x, y) = 0$ and $f_y(x, y) = 0$.
+    \item Solve the system of equations to find the points $(x_c, y_c)$ where the gradients are zero.
+\end{enumerate}
+
+Once critical points $(x_c, y_c)$ are found, determine their nature (local maxima, local minima, or saddle points) using the second derivative test:
+
+\begin{equation}
+    D = f_{xx}(x_c, y_c) f_{yy}(x_c, y_c) - [f_{xy}(x_c, y_c)]^2
+\end{equation}
+
+\begin{itemize}
+    \item If $D > 0$ and $f_{xx}(x_c, y_c) > 0$, $(x_c, y_c)$ is a local minimum.
+    \item If $D > 0$ and $f_{xx}(x_c, y_c) < 0$, $(x_c, y_c)$ is a local maximum.
+    \item If $D < 0$, $(x_c, y_c)$ is a saddle point.
+    \item If $D = 0$, the test is inconclusive.
+\end{itemize}

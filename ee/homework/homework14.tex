@@ -1,0 +1,164 @@
+\documentclass[a4paper,12pt,openany]{article}
+\usepackage{amsmath}     % Advanced math features
+\usepackage{amsfonts}    % Math fonts
+\usepackage{amssymb}     % Math symbols
+\usepackage{graphicx}    % Including graphics
+\usepackage{geometry}    % Page layout adjustments
+\usepackage{fancyhdr}    % Custom headers and footers
+\usepackage{titlesec}    % Title formatting
+\usepackage{multicol}    % Multi-column formatting
+\usepackage{bm}
+
+% Page layout settings
+\geometry{
+  left=1in,
+  right=1in,
+  top=1in,
+  bottom=1in,
+}
+% Single variable partial derivative: ∂f/∂x
+\newcommand{\pd}[2]{\dfrac{\partial #1}{\partial #2}}
+
+% Second-order mixed partial derivative: ∂²f/∂x∂y
+\newcommand{\pdm}[3]{\dfrac{\partial^2 #1}{\partial #2 \partial #3}}
+
+% Higher-order partial derivative with a specified order: ∂ⁿf/∂xⁿ
+\newcommand{\pdn}[3]{\dfrac{\partial^{#1} #2}{\partial #3^{#1}}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\tsp}[3]{
+    \vec{#1}\vec{#2}\vec{#3}
+}
+
+\newcommand{\dotp}[2]{
+    \vec{#1} \cdot \vec{#2}
+}
+
+\newcommand{\crossp}[2]{
+    \vec{#1} \times \vec{#2}
+}
+
+\newcommand{\vcomponents}[4]{
+    #1 = \left\langle #2, #3, #4 \right\rangle
+}
+\newcommand{\grad}[1]{
+    \nabla #1
+}
+\newcommand{\uniti}{
+    \hat{\iota}
+}
+\newcommand{\unitj}{
+    \hat{\jmath}
+}
+\newcommand{\unitk}{
+    \hat{k}
+}
+\newcommand{\dirder}[2]{
+    #1\prime_\vec{#2}
+}
+\newcommand{\abs}[1]{
+    \left\vert#1\right\vert
+}
+\newcommand{\magn}[1]{
+    \left\Vert#1\right\Vert
+}
+\newcommand{\parenth}[1]{
+    \left(#1\right)
+}
+
+% Custom header and footer
+\setlength{\headheight}{14.5pt}
+\addtolength{\topmargin}{-2.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Silas Kinnear} % Replace with your name
+\fancyhead[C]{Homework \#13}
+\fancyhead[R]{\thepage}
+
+
+\begin{document}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[L]{\leftmark}
+  \fancyhead[R]{Kinnear \thepage}
+}
+\parskip=.5cm
+\parindent=0cm
+
+I started doing my notes in \LaTeX \, because this is how I usually take my notes and thought it would make more sense.
+\section*{7.30}
+\begin{align*}
+    (a) \quad & \int_{-\infty}^{\infty} 4t^2 \delta(t-1) \, dt &&= 4t^2 \, \Big|_{t=1} &&= 4 \\
+    (b) \quad & \int_{-\infty}^{\infty} 4t^2 \cos(2\pi t) \delta(t-0.5) \, dt &&= \cos(2\pi t) 4t^2 \, \Big|_{t=0.5} &&= -1
+\end{align*}
+
+\section*{7.42}
+($a$)
+\begin{align*}
+    v_o(0) &= 0 \\
+    v_o(\infty) &= \dfrac{4}{6} \,\cdot \, 12 = 8 \\
+    v_o(t) &= v_o(\infty) + (v_o(0) - v_o(\infty))e^{-t/\tau} \\
+    \tau &= R_{eq} C_{eq} \\
+    R_{eq} &= 2 \parallel 4 = \dfrac{2 \cdot 4}{2 + 4} = \dfrac{8}{6} \\
+    \tau &= 4 \\
+    v_o(t) &= 8 - 8e^{-t/4} \text{ V}
+\end{align*}
+($b$)
+\begin{align*}
+    v_o(\infty) &= 0 \\
+    v_o(t) &= v_o(0)e^{-t/\tau} \\
+    v_o(0) &= \dfrac{4}{6} \, \cdot \, 12 = 8 \\
+    \tau &= 4 \cdot 3 = 12 \\
+    v_o(t) &= 8e^{-t/12} \text{ V}
+\end{align*}
+
+\section*{7.48}
+\begin{align*}
+    v(0) &= 10 \text{ for } t < 0 \\
+    u(-t) &= 0 \text{ for } t < 0 \\
+    v(\infty) &= 0 \text{ for } t > 0 \\
+    u(-t) &= 0 \text{ for } t > 0 \\
+    R_{th} &= 10 + 20 \\
+    \tau &= R_{th} C = 30 \cdot 0.1 = 3 \\
+    --- \quad v(t) &= 10e^{-t/3} \text{ V}\quad --- \\
+    i(t) &= C \dfrac{dv}{dt} = 0.1 \dfrac{d}{dt} \parenth{10e^{-t/3}} \\
+    --- \quad i(t) &= -\dfrac{1}{3}e^{-t/3} \text{ A} \quad ---
+\end{align*}
+
+\section*{7.60}
+\begin{align*}
+    \text{For } t < 0, \quad u(t) &= 0 \\
+    i(0) &= 0\\
+    \text{For } t > 0, R_{eq} &= 5\parallel 20 = 4 \Omega \\
+    \tau &= \dfrac{8}{4} = 2 \\
+    i(\infty) &= 8 \text{ A} \\
+    i(t) &= 8(1 - e^{-t/2}) \text{ A} \\
+    v(t) &= L \dfrac{di}{dt} = 8 \cdot -4 \cdot \dfrac{-1}{2} \cdot e^{-t/2} \qquad \qquad \\
+    &= 16e^{-t/2} \text{ V}
+\end{align*}
+
+\section*{7.62}
+\begin{align*}
+    \tau &= \dfrac{2}{3 \parallel 6} = 1 \\
+    \text{For $t \in (0, 1)$, $u(t-1) = 0$ : }& \\
+    i(0) &= 0 \\
+    i(\infty) &= \dfrac{1}{6} \\
+    i(t) &= \dfrac{1}{6}(1 - e^{-t}) \text{ A} \\
+    \text{For $t \in (1, \infty)$,} \\
+    i(1) &= \dfrac{1}{6}(1 - e^{-1}) \\
+    &\approx 0.105 \\
+    i(\infty) &= \dfrac{1 + 2}{6} = \dfrac{1}{2}\\
+    i(t) &= \dfrac{1}{2} + (0.105 - \dfrac{1}{2})e^{-t} \text{ A} \\
+    \text{For $t \in (0, \infty)$,}& \\
+    i(t) &=
+    \begin{cases}
+        i(t) = \dfrac{1}{6}(1 - e^{-t}) \text{ A} \qquad \text{for } t \in (0, 1) \\
+        \\
+        i(t) = \dfrac{1}{2} + (0.105 - \dfrac{1}{2})e^{-(t-1)} \text{ A} \quad \text{for } t \in (1, \infty)
+    \end{cases}
+\end{align*}
+
+
+
+\end{document}

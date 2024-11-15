@@ -1,0 +1,159 @@
+\documentclass[a4paper,12pt,openany]{article}
+\usepackage{amsmath}     % Advanced math features
+\usepackage{amsfonts}    % Math fonts
+\usepackage{amssymb}     % Math symbols
+\usepackage{graphicx}    % Including graphics
+\usepackage{geometry}    % Page layout adjustments
+\usepackage{fancyhdr}    % Custom headers and footers
+\usepackage{titlesec}    % Title formatting
+\usepackage{multicol}    % Multi-column formatting
+
+% Page layout settings
+\geometry{
+  left=1in,
+  right=1in,
+  top=1in,
+  bottom=1in,
+}
+% Single variable partial derivative: ∂f/∂x
+\newcommand{\pd}[2]{\dfrac{\partial #1}{\partial #2}}
+
+% Second-order mixed partial derivative: ∂²f/∂x∂y
+\newcommand{\pdm}[3]{\dfrac{\partial^2 #1}{\partial #2 \partial #3}}
+
+% Higher-order partial derivative with a specified order: ∂ⁿf/∂xⁿ
+\newcommand{\pdn}[3]{\dfrac{\partial^{#1} #2}{\partial #3^{#1}}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\tsp}[3]{
+    \vec{#1}\vec{#2}\vec{#3}
+}
+
+\newcommand{\dotp}[2]{
+    \vec{#1} \cdot \vec{#2}
+}
+
+\newcommand{\crossp}[2]{
+    \vec{#1} \times \vec{#2}
+}
+
+\newcommand{\vcomponents}[4]{
+    #1 = \left\langle #2, #3, #4 \right\rangle
+}
+\newcommand{\grad}[1]{
+    \nabla #1
+}
+\newcommand{\uniti}{
+    \hat{\iota}
+}
+\newcommand{\unitj}{
+    \hat{\jmath}
+}
+\newcommand{\unitk}{
+    \hat{k}
+}
+\newcommand{\dirder}[2]{
+    #1\prime_\vec{#2}
+}
+\newcommand{\abs}[1]{
+    \left\vert#1\right\vert
+}
+\newcommand{\magn}[1]{
+    \left\Vert#1\right\Vert
+}
+\newcommand{\parenth}[1]{
+    \left(#1\right)
+}
+
+% Custom header and footer
+\setlength{\headheight}{14.5pt}
+\addtolength{\topmargin}{-2.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Silas Kinnear} % Replace with your name
+\fancyhead[C]{Applications of Dot and Cross Product}
+\fancyhead[R]{\thepage}
+
+\setlength{\columnseprule}{0.4pt}
+
+\begin{document}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[L]{\leftmark}
+  \fancyhead[R]{Kinnear \thepage}
+}
+\parskip=.5cm
+\parindent=0cm
+
+
+\begin{multicols*}{2}
+    \section*{167:}
+Vector Projection:
+\begin{align*}
+    \vec{u} &= \langle5, 2\rangle \\
+    \vec{v} &= \langle2, 3\rangle \\
+    \vec{w} &= \vec{\text{proj}}_{\vec{v}} \vec{u} \\
+    &= \dfrac{\dotp{u}{v}}{\magn{\vec{v}}^2} \vec{v} \\
+    &= \dfrac{16}{13} \langle2, 3\rangle \\
+    \vec{\text{proj}}_{\vec{v}} \vec{u} &= \dfrac{32}{13} \uniti + \dfrac{48}{13} \unitj \\
+\end{align*}
+    Scalar Projection: 
+\begin{align*}
+    \text{proj}_{\vec{v}} \vec{u} &= \magn{\vec{w}} \\
+    &= \dfrac{16}{\sqrt{13}}
+\end{align*}
+
+\section*{175:}
+Given: 
+\[
+    F = \langle 5, 6, -2 \rangle
+\]
+\[
+    P(3, -1, 0),\quad Q(2, 3, 1)
+\] 
+\begin{align*}
+    W &= F \cdot \vec{PQ} \\
+    &= \langle 5, 6, -2 \rangle \cdot \langle -1, -4, -1 \rangle \\
+    &= -17  \\
+    W &= 17 \text{ N m}
+\end{align*}
+\vspace{2in}\\
+\columnbreak
+\section*{177:}
+Given:
+\[
+    \theta = 20^\circ, \, ||F|| = 25, D = 50
+\]
+\begin{align*}
+    W &= ||F|| \cdot D \cdot \cos \theta \\
+    &= 25 \cdot 50 \cdot \cos 20^\circ \\
+    &= 25 \cdot 50 \cdot 0.9397 \\
+    &= 1174.25 \text{ ft lb} \\
+    &\approx 1175 \text{ ft lb}
+\end{align*}
+
+\section*{209:}
+Given:
+\[
+    \vcomponents{u}{3}{2}{0}, \quad \vcomponents{v}{0}{2}{1}
+\]
+\begin{align*}
+    A &= ||\crossp{u}{v}|| \\
+    &= ||\langle 2, -3, 6 \rangle|| \\
+    &= 7 
+\end{align*}
+
+\section*{215:}
+Given:
+\[
+    \vcomponents{u}{1}{1}{1}, \, \vcomponents{v}{7}{6}{9}, \, \vcomponents{w}{4}{2}{7}
+\]
+\begin{align*}
+    \vec{v} \cdot (\vec{u} \times \vec{w}) &= \vec{v} \cdot \langle 5, -3, -2 \rangle \\
+    &= -1 \\
+    \vec{w} \cdot (\vec{u} \times \vec{v}) &= \vec{w} \cdot \langle 3, -2, -1 \rangle \\
+    &= 1 
+\end{align*}
+\end{multicols*}
+\end{document}
