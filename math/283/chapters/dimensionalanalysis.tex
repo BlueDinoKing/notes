@@ -290,3 +290,77 @@ Graphing dimensions change based on the variables involved:
     \item \textbf{3D}: Description
     \item \textbf{4D and Higher}: Equation
 \end{itemize}
+
+\section{Parametrization}
+
+Parametrization is a method to represent a curve or surface in terms of a parameter. For example, a line can be parametrized as:
+
+\subsection{Parametrization of a Plane Line}
+\[
+    l = 
+    \begin{cases}
+        x = (1-t)x_1 + tx_2\\
+        y = (1-t)y_1 + ty_2\\
+    \end{cases}
+\]
+where \(t\) is the parameter, and \(P_1(x_1, y_1)\) and \(P_2(x_2, y_2)\) are points on the line.
+To parametrize a line segment, \(t\) is restricted.
+
+
+
+\subsection{Parametrization of a Circle}
+\[
+    C = 
+    \begin{cases}
+        x = h + r\cos(t)\\
+        y = k + r\sin(t)
+    \end{cases}
+\]
+where \(t\) is the parameter, and \((h, k)\) is the center of the circle with radius \(r\).
+
+\subsection{Parametrization of a Hyperbola}
+\[
+    H = 
+    \begin{cases}
+        x = h + a\cosh(t)\\
+        y = k + b\sinh(t)
+    \end{cases}
+\]
+where \(t\) is the parameter, and \((h, k)\) is the center of the hyperbola with semi-axes \(a\) and \(b\).
+
+\subsection{Parametrization of a Parabola}
+\[
+    P = 
+    \begin{cases}
+        x = t \\
+        y = at^2 + bt + c 
+    \end{cases}
+\]
+where \(t\) is the parameter, and \(a\), \(b\), and \(c\) are constants.
+
+If you are able to solve for one variable, there is no need to parametrize the curve.
+\subsection{Parametrization of a Sphere}
+
+\pagebreak
+\subsection{Examples}
+1.
+\[
+x^n + y^n = 1
+\]
+\[
+\begin{cases}
+    x = \cos^\frac{2}{n}(t)\\
+    y = \sin^\frac{2}{n}(t)
+\end{cases}
+\]
+2.
+\[
+x^n - y^n = 1
+\]
+\[
+\begin{cases}
+    x = \cosh^\frac{2}{n}(t)\\
+    y = \sinh^\frac{2}{n}(t)
+\end{cases}
+\]
+where $\cosh$ and $\sinh$ are hyperbolic functions given by $\cosh(t) = \dfrac{e^t + e^{-t}}{2}$ and $\sinh(t) = \dfrac{e^t - e^{-t}}{2}$ and satisfy the identity $\cosh^2(t) - \sinh^2(t) = 1$.

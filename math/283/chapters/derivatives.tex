@@ -274,3 +274,222 @@ The partial derivative of the composite function with respect to the first new v
         \end{align*}
 
 \end{enumerate}
+
+\section{Second Derivative Test of Multiple Variables}
+
+The second derivative test is used to determine the nature of a critical point of a function of multiple variables. The test is as follows:
+
+\begin{enumerate}
+    \item Compute the second partial derivatives of the function \(f(x, y)\): 
+    \[
+    f_{xx}, \ f_{yy}, \ \text{and} \ f_{xy}.
+    \]
+
+    \item Form the \textbf{Hessian matrix}:
+    \[
+    H = \begin{bmatrix}
+    f_{xx} & f_{xy} \\
+    f_{xy} & f_{yy}
+    \end{bmatrix}.
+    \]
+
+    \item Calculate the \textbf{determinant of the Hessian matrix} (\(\Delta f\)):
+    \[
+    \delta f = f_{xx}f_{yy} - (f_{xy})^2.
+    \]
+
+    \item Use the following rules to classify the critical point:
+    \begin{itemize}
+        \item If \(\Delta f > 0\) and \(f_{xx} > 0\), the critical point is a \textbf{local minimum}.
+        \item If \(\Delta f > 0\) and \(f_{xx} < 0\), the critical point is a \textbf{local maximum}.
+        \item If \(\Delta f < 0\), the critical point is a \textbf{saddle point}.
+        \item If \(\Delta f = 0\), the test is \textbf{inconclusive}.
+    \end{itemize}
+\end{enumerate}
+
+
+
+
+\subsection{Examples}
+1. 
+ 
+\[
+    f(x, y) = 4x + 6y - x^2 - y^2
+\]
+\[ 
+    D = \{ (x, y), \, x \in [0, 4], \, y \in [0, 5]\}
+\]
+\[
+df = 4dx + 6dy - 2xdx - 2ydy
+\]
+\[
+    \grad{f} = \langle 4-2x, 6-2y \rangle
+\]
+\[
+    \grad{f} = \langle 0, 0 \rangle \implies x = 2, y = 3
+\]
+\[  
+    \pdn{2}{f}{x} = -2, \quad \pdn{2}{f}{y} = -2, \quad \pdm{f}{x}{y} = 0
+\]
+\[
+    \Delta f(x, y) = -4 < 0 \implies \text{ local maximum at } (2, 3)
+\]
+\[
+\text{Vertices: } O = (0, 0), \, A = (4, 0), \, B = (4, 5), \, C = (0, 5)
+\]
+OA: 
+\[
+    OA, \, x \in (0, 4) \implies f(x, 0) = 4x - x^2
+\]
+\[
+    f'(x) = 4 - 2x = 0 \implies x = 2
+\]
+\[
+    f(2, 0) = 8 \implies \text{ local maximum at } (2, 0)
+\]
+AB:
+\[
+    AB, \, y \in (0, 5) \implies f(4, y) = 6y - y^2
+\]
+\[
+    f'(y) = 6 - 2y = 0 \implies y = 3
+\]
+\[
+    f(4, 3) = 18 \implies \text{ local maximum at } (4, 3)
+\]
+BC:
+\[
+    BC, \, x \in (0, 4) \implies f(x, 5) = 4x - x^2
+\]
+\[
+    f'(x) = 4 - 2x = 0 \implies x = 2
+\]
+\[
+    f(2, 5) = 8 \implies \text{ local maximum at } (2, 5)
+\]
+CO:
+\[
+    CO, \, y \in (0, 5) \implies f(0, y) = 6y - y^2
+\]
+\[
+    f'(y) = 6 - 2y = 0 \implies y = 3
+\]
+\[
+    f(0, 3) = 18 \implies \text{ local maximum at } (0, 3)
+\]
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Boundary & Point & $f(x, y)$ \\
+        \hline
+        OA & (2, 0) & 4 \\
+        OA & (0, 0) & 0 \\
+        AB & (4, 3) & 9 \\
+        AB & (4, 0) & 0 \\
+        BC & (2, 5) & 9 \\
+        BC & (4, 5) & 5 \\
+        CO & (0, 3) & 9 \\
+        CO & (0, 5) & 5 \\
+           & (2, 3) & 13 \\
+        \hline
+    \end{tabular}
+\end{center}
+\[
+    \therefore \text{ global maximum at } (2, 3, 13)
+\]
+
+\section{Lagrange Multipliers}
+
+The method of \textbf{Lagrange multipliers} is used to find the maximum and minimum values of a function \( f(x, y, \dots) \) subject to one or more constraints. The process is as follows:
+
+\begin{enumerate}
+    \item Define the \textbf{Lagrangian function}:
+    \[
+    \mathcal{L}(x, y, \lambda) = f(x, y, \dots) + \lambda \cdot g(x, y, \dots),
+    \]
+    where \( g(x, y, \dots) = 0 \) is the constraint and \( \lambda \) is the \textbf{Lagrange multiplier}.
+
+    \item Compute the partial derivatives of \(\mathcal{L}\) with respect to all variables and \(\lambda\):
+    \[
+    \frac{\partial \mathcal{L}}{\partial x}, \ \frac{\partial \mathcal{L}}{\partial y}, \ \dots, \ \frac{\partial \mathcal{L}}{\partial \lambda}.
+    \]
+
+    \item Set these derivatives equal to zero to form a system of equations:
+    \[
+    \begin{aligned}
+    &\frac{\partial \mathcal{L}}{\partial x} = 0, \\
+    &\frac{\partial \mathcal{L}}{\partial y} = 0, \\
+    &\,\,\,\,\vdots \\
+    &\frac{\partial \mathcal{L}}{\partial \lambda} = g(x, y, \dots) = 0.
+    \end{aligned}
+    \]
+
+    \item Solve the system of equations to find the critical points.
+
+    \item Evaluate \( f(x, y, \dots) \) at the critical points to determine the maximum or minimum values, depending on the problem.
+\end{enumerate}
+
+\textbf{Key Notes:}
+\begin{itemize}
+    \item The method can be extended to functions with multiple constraints. For \(k\) constraints \( g_1(x, y, \dots) = 0, \ g_2(x, y, \dots) = 0, \ \dots, \ g_k(x, y, \dots) = 0\), introduce a Lagrange multiplier \(\lambda_i\) for each constraint and define:
+    \[
+    \mathcal{L}(x, y, \lambda_1, \lambda_2, \dots) = f(x, y, \dots) + \lambda_1 \cdot g_1(x, y, \dots) + \lambda_2 \cdot g_2(x, y, \dots) + \dots.
+    \]
+    \item Always verify that the solutions satisfy the constraints.
+\end{itemize}
+
+\subsection{Examples}
+1. Find the maximum and minimum values of \(V = xyz\) subject to the constraint \(x + y + z = 1\).
+
+\begin{align*}
+    \mathcal{L}(x, y, z, \lambda) &= xyz + \lambda(x + y + z - 1)\\
+    \frac{\partial \mathcal{L}}{\partial x} &= yz + \lambda = 0,\\
+    \frac{\partial \mathcal{L}}{\partial y} &= xz + \lambda = 0,\\
+    \frac{\partial \mathcal{L}}{\partial z} &= xy + \lambda = 0,\\
+    \frac{\partial \mathcal{L}}{\partial \lambda} &= x + y + z - 1 = 0.
+\end{align*}
+
+Solving the system of equations, we find \(x = y = z = \dfrac{1}{3}\). Thus, the maximum and minimum values of \(V\) are \(\dfrac{1}{27}\).
+
+\subsection{Shortcut}
+The Lagrange multiplier method can be simplified by using the following steps:
+\begin{enumerate}
+    \item Solve the constraint for each variable
+    \subitem If it has multiple constraints, solve for the system of the constraints.
+    \item Substitute the variables into the function
+    \item Find the critical points
+    \item Evaluate the function at the critical points
+    \item Compare the values to find the maximum and minimum
+\end{enumerate}
+
+\subsubsection{Examples}
+1. $f(x, y) = x^2 + y^2$, $xy = 1$
+\[
+    y = \dfrac{1}{x} \implies f(x) = x^2 + \dfrac{1}{x^2}
+\]
+\[
+    f'(x) = 2x - \dfrac{2}{x^3} = 0 \implies x = 1
+\]
+\[
+    f(1) = 2 \implies \text{ local minimum at } (1, 1)
+\]
+2. $f(x, y) = 3x + y$, $x^2 + y^2 = 10$
+\[
+    f(x, y) =
+    \begin{cases}
+        x = \sqrt{10}\cos\theta,\\
+        y = \sqrt{10}\sin\theta
+    \end{cases}
+\]
+\[
+    f(\sqrt{10}\cos\theta, \sqrt{10}\sin\theta) = 3\sqrt{10}\cos\theta + \sqrt{10}\sin\theta
+\]
+\[
+    f'(\theta) = -3\sqrt{10}\sin\theta + \sqrt{10}\cos\theta = 0 \implies \theta = \dfrac{5\pi}{6}
+\]
+\[
+    f\left(\sqrt{10}\cos\left(\dfrac{5\pi}{6}\right), \sqrt{10}\sin\left(\dfrac{5\pi}{6}\right)\right) = -\sqrt{10} 
+\]
+\[
+    \implies \text{ local minimum at } \left(\sqrt{10}\cos\left(\dfrac{5\pi}{6}\right), \sqrt{10}\sin\left(\dfrac{5\pi}{6}\right)\right)
+\]

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731523554.9247 "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" "math283.pdf" "math283" 1731523559.15823 0
+["pdflatex"] 1732227287.5548 "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" "math283.pdf" "math283" 1732227290.29791 0
   "C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730915284 1564848 8844c5dd88c3c540f98510ecde7cc446 ""
   "C:/Users/silas.349763/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1730744745 14064 f549596526c3f58c6bd6d28eabc9a490 ""
   "C:/Users/silas.349763/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730695910 24228391 3223ffb79cd0c9bd0f575a210e2e9549 ""
@@ -65,19 +65,19 @@
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/silas.349763/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "c:/Users/silas.349763/Desktop/Math/math/283/math283.tex" 1731274652 2711 c1efe20c28b78cd8036f54f2488c3f0a ""
-  "chapters/derivatives.tex" 1731009504 10616 acad638fdcf4d4a82387b03d74fa55b4 ""
-  "chapters/dimensionalanalysis.tex" 1731017389 10661 d281dc328a8dcbe6c2d09f5441b3cf2e ""
+  "chapters/derivatives.tex" 1732226386 17453 14f8259c3105da5eab200e8cf4b75571 ""
+  "chapters/dimensionalanalysis.tex" 1732223075 12484 8fe9749ae8300543b1ace2558afc89b1 ""
   "chapters/elementaryfunctions.tex" 1731009842 970 9cee8b411ffbc8854a372c78c2f30d78 ""
-  "chapters/integrals.tex" 1731290697 1386 22c128947e7a08ae8e919a560b411355 ""
+  "chapters/integrals.tex" 1732227285 1610 eeb4b0925751756b0b671691341fe878 ""
   "chapters/multivariable.tex" 1731523540 2669 fd84e77307c34d05f9319fc7bba27964 ""
   "chapters/vectorcalculus.tex" 1731015274 12249 7c4404f84609ee238b762f40c3d0337e ""
   "domain1.png" 1730869810 30874 be565785521118fd9f49ff83b7f84001 ""
   "domain2.png" 1730913116 12599 b8045b875f2ccae4b3621bc0f33cd2e0 ""
   "graph1.png" 1730870900 87514 95197b603af4404e351a13092650e0ec ""
   "graph2.png" 1730913210 21927 8c8b3ea4628e6a058ce5ef2738fb3167 ""
-  "math283.aux" 1731523558 14810 2414aad96959de37041ba1187c8bc61f "pdflatex"
+  "math283.aux" 1732227289 16399 9501644031975e0fb34517c4a3e526c6 "pdflatex"
   "math283.tex" 1731274652 2711 c1efe20c28b78cd8036f54f2488c3f0a ""
-  "math283.toc" 1731523558 6839 7df3acc70bc49700f4020b8bd330d86b "pdflatex"
+  "math283.toc" 1732227289 7854 dd1167358d4ea9cf60d588ee3977b8b1 "pdflatex"
   "other/handouts.tex" 1731009955 8955 0e4bf09ffb8332c6012f2856eeec4c66 ""
   (generated)
   "math283.aux"
