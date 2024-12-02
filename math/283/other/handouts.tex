@@ -209,5 +209,32 @@ $\pi + 0$ & $-0$ & $-1$ & $+0$ & $+\infty$ \\
     \arcsin x &= \sum_{n=0}^\infty \dfrac{(2n)!}{4^n(n!)^2(2n+1)}x^{2n+1}, \quad&&x \in [-1, 1]
 \end{alignat*}
 
+\pagebreak
+\section*{Handout 7.1: Application of Various Types of Integrals in Mechanics}
+for mass, center of mass, centroid, moments of statics, moments of inertia, length, distance, area, volume, surface area, etc.
 
+of an object $O$ the following types:
+\begin{itemize}
+    \item Arbitrary 3D Solid;
+    \item Lamina (2D in 2D);
+    \item Rod (1D in 1D);
+    \item Wire (1D in 3D);
+    \item Shell (2D in 3D);
+    \item Points (0D in 3D);
+\end{itemize}
+with respect to $Q$, as $Q$ could be a point, a straight line, or a plane.
+
+All applications for the general case of inhomogeneous objects and the special case of homogeneous objects are given by only one formula.
+\pagebreak
+\section*{Handout 7.1}
+\begin{equation*}
+    mom_Q^{(n)}(O) = \int_O D^n \delta \, dE
+\end{equation*}
+
+where $O$ is the object; $Q$ is a point, straight line, or plane; $\delta$ is the density; $dE$ is a portion of $O$; $D$ is the distance from an arbritary point $P$ ($P \in O$) to $Q$.
+\begin{itemize}
+    \item $n = 0$: mass, area, length, volume, etc.
+    \item $n = 1$: moment of statics
+    \item $n = 2$: moment of inertia
+\end{itemize}
 \endgroup

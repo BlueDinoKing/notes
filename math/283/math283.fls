@@ -114,10 +114,10 @@ INPUT other\handouts.tex
 INPUT C:\Users\silas.349763\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\silas.349763\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\silas.349763\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\silas.349763\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\chapters\elementaryfunctions.tex
 INPUT .\chapters\elementaryfunctions.tex
 INPUT chapters\elementaryfunctions.tex
-INPUT C:\Users\silas.349763\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\chapters\dimensionalanalysis.tex
 INPUT .\chapters\dimensionalanalysis.tex
 INPUT chapters\dimensionalanalysis.tex

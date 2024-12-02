@@ -9,99 +9,102 @@
 \contentsline {subsection}{\numberline {0.5.1}Trigonometric Identities}{9}{}%
 \contentsline {subsection}{\numberline {0.5.2}Trigonometric Chart}{10}{}%
 \contentsline {section}{\numberline {0.6}Handout 6: Power Series for Elementary Functions}{11}{}%
-\contentsline {chapter}{\numberline {1}Elementary Functions}{12}{}%
-\contentsline {section}{\numberline {1.1}Classifications}{12}{}%
-\contentsline {section}{\numberline {1.2}Limits and Continuity}{12}{}%
-\contentsline {chapter}{\numberline {2}Dimensional Analysis}{13}{}%
-\contentsline {section}{\numberline {2.1}Introduction}{13}{}%
-\contentsline {section}{\numberline {2.2}Classifications}{13}{}%
-\contentsline {section}{\numberline {2.3}Geometric Equations}{14}{}%
-\contentsline {subsection}{\numberline {2.3.1}Distance Between Two Points}{14}{}%
-\contentsline {subsection}{\numberline {2.3.2}Distance Between a Point and a Plane}{14}{}%
-\contentsline {subsection}{\numberline {2.3.3}Distance Between Two Parallel Lines}{14}{}%
-\contentsline {subsection}{\numberline {2.3.4}Distance Between a Point and a Line}{14}{}%
-\contentsline {subsection}{\numberline {2.3.5}Midpoint Formula}{14}{}%
-\contentsline {subsection}{\numberline {2.3.6}Equation of a Sphere}{14}{}%
-\contentsline {subsection}{\numberline {2.3.7}Equation of a Circle}{15}{}%
-\contentsline {subsection}{\numberline {2.3.8}General Quadratic Equation with two unknowns}{15}{}%
-\contentsline {subsection}{\numberline {2.3.9}Equation of an Ellipsoid}{15}{}%
-\contentsline {subsection}{\numberline {2.3.10}Equation of an Ellipse}{15}{}%
-\contentsline {subsection}{\numberline {2.3.11}Equation of a Hyperbola}{15}{}%
-\contentsline {subsection}{\numberline {2.3.12}Equation of a Parabola}{15}{}%
-\contentsline {subsection}{\numberline {2.3.13}Equations of a Line}{15}{}%
-\contentsline {subsubsection}{Parametric Form}{16}{}%
-\contentsline {subsubsection}{Normal Form}{16}{}%
-\contentsline {subsection}{\numberline {2.3.14}Equations of a Plane}{16}{}%
-\contentsline {subsubsection}{Point-Normal/Scalar Form}{16}{}%
-\contentsline {section}{\numberline {2.4}Quadric Surfaces}{16}{}%
-\contentsline {subsection}{\numberline {2.4.1}Ellipsoid}{16}{}%
-\contentsline {subsection}{\numberline {2.4.2}Hyperboloid of One Sheet}{16}{}%
-\contentsline {subsection}{\numberline {2.4.3}Hyperboloid of Two Sheets}{16}{}%
-\contentsline {subsection}{\numberline {2.4.4}Elliptic Cone}{17}{}%
-\contentsline {subsection}{\numberline {2.4.5}Elliptic Paraboloid}{17}{}%
-\contentsline {subsection}{\numberline {2.4.6}Hyperbolic Paraboloid}{17}{}%
-\contentsline {subsection}{\numberline {2.4.7}Describing Quadric Surfaces}{17}{}%
-\contentsline {subsubsection}{Example}{17}{}%
-\contentsline {section}{\numberline {2.5}Graphing Concepts}{18}{}%
-\contentsline {subsection}{\numberline {2.5.1}Functions of a Single Variable}{18}{}%
-\contentsline {subsection}{\numberline {2.5.2}Functions of Multiple Variables}{18}{}%
-\contentsline {section}{\numberline {2.6}Graphing Dimensions Summary}{20}{}%
-\contentsline {section}{\numberline {2.7}Parametrization}{21}{}%
-\contentsline {subsection}{\numberline {2.7.1}Parametrization of a Plane Line}{21}{}%
-\contentsline {subsection}{\numberline {2.7.2}Parametrization of a Circle}{21}{}%
-\contentsline {subsection}{\numberline {2.7.3}Parametrization of a Hyperbola}{21}{}%
-\contentsline {subsection}{\numberline {2.7.4}Parametrization of a Parabola}{21}{}%
-\contentsline {subsection}{\numberline {2.7.5}Parametrization of a Sphere}{22}{}%
-\contentsline {subsection}{\numberline {2.7.6}Examples}{23}{}%
-\contentsline {chapter}{\numberline {3}Functions of Several Variables}{24}{}%
-\contentsline {section}{\numberline {3.1}Continuity}{24}{}%
-\contentsline {section}{\numberline {3.2}Equations}{24}{}%
-\contentsline {subsection}{\numberline {3.2.1}Equations of a Tangent Plane}{24}{}%
-\contentsline {section}{\numberline {3.3}Finding the Tangent Plane}{25}{}%
-\contentsline {section}{\numberline {3.4}Finding Critical Points}{25}{}%
-\contentsline {chapter}{\numberline {4}Partial Derivatives}{26}{}%
-\contentsline {section}{\numberline {4.1}Differentiability}{26}{}%
-\contentsline {section}{\numberline {4.2}Introduction}{26}{}%
-\contentsline {subsection}{\numberline {4.2.1}Differentials}{26}{}%
-\contentsline {subsubsection}{Error Estimation}{26}{}%
-\contentsline {subsubsection}{Example of Error Estimation}{27}{}%
-\contentsline {subsection}{\numberline {4.2.2}Derivatives}{27}{}%
-\contentsline {subsubsection}{Linearization}{27}{}%
-\contentsline {subsubsection}{Example of Linearization}{27}{}%
-\contentsline {section}{\numberline {4.3}Partial Derivatives}{28}{}%
-\contentsline {subsection}{\numberline {4.3.1}Partial Derivatives Definition}{28}{}%
-\contentsline {subsubsection}{Shortcut}{28}{}%
-\contentsline {subsection}{\numberline {4.3.2}All Defintions of First and Second Partial Derivatives}{28}{}%
-\contentsline {subsection}{\numberline {4.3.3}Properties of Partial Derivatives}{29}{}%
-\contentsline {subsubsection}{Total Differential}{29}{}%
-\contentsline {subsection}{\numberline {4.3.4}Higher-Order Partial Derivatives}{29}{}%
-\contentsline {section}{\numberline {4.4}Examples:}{30}{}%
-\contentsline {section}{\numberline {4.5}Chain Rule}{31}{}%
-\contentsline {subsection}{\numberline {4.5.1}Examples:}{32}{}%
-\contentsline {section}{\numberline {4.6}Second Derivative Test of Multiple Variables}{33}{}%
-\contentsline {subsection}{\numberline {4.6.1}Examples}{33}{}%
-\contentsline {section}{\numberline {4.7}Lagrange Multipliers}{34}{}%
-\contentsline {subsection}{\numberline {4.7.1}Examples}{35}{}%
-\contentsline {subsection}{\numberline {4.7.2}Shortcut}{36}{}%
-\contentsline {subsubsection}{Examples}{36}{}%
-\contentsline {chapter}{\numberline {5}Vector Calculus}{37}{}%
-\contentsline {section}{\numberline {5.1}Introduction to Vectors and Scalars}{37}{}%
-\contentsline {subsection}{\numberline {5.1.1}Vector Addition}{38}{}%
-\contentsline {subsection}{\numberline {5.1.2}Vector Scalar Multiplication}{38}{}%
-\contentsline {subsection}{\numberline {5.1.3}Scalar Multiples}{38}{}%
-\contentsline {section}{\numberline {5.2}Dot Product}{38}{}%
-\contentsline {subsection}{\numberline {5.2.1}Applications of the Dot Product}{39}{}%
-\contentsline {section}{\numberline {5.3}Cross Product}{40}{}%
-\contentsline {subsection}{\numberline {5.3.1}Shortcut for Cross Product}{40}{}%
-\contentsline {subsection}{\numberline {5.3.2}Applications of the Cross Product}{40}{}%
-\contentsline {section}{\numberline {5.4}Triple Scalar Product}{41}{}%
-\contentsline {section}{\numberline {5.5}Directional Derivatives}{41}{}%
-\contentsline {subsection}{\numberline {5.5.1}Definition}{41}{}%
-\contentsline {subsection}{\numberline {5.5.2}Shortcut Formula for Directional Derivative}{42}{}%
-\contentsline {subsection}{\numberline {5.5.3}Properties of Directional Derivatives}{42}{}%
-\contentsline {subsection}{\numberline {5.5.4}Examples}{43}{}%
-\contentsline {chapter}{\numberline {6}Multiple Integrals}{44}{}%
-\contentsline {section}{\numberline {6.1}Line Integral}{44}{}%
-\contentsline {subsection}{\numberline {6.1.1}Deriving the Line Integral}{44}{}%
-\contentsline {subsection}{\numberline {6.1.2}Examples}{45}{}%
-\contentsline {section}{\numberline {6.2}Multiple Integrals}{45}{}%
+\contentsline {chapter}{\numberline {1}Elementary Functions}{14}{}%
+\contentsline {section}{\numberline {1.1}Classifications}{14}{}%
+\contentsline {section}{\numberline {1.2}Limits and Continuity}{14}{}%
+\contentsline {chapter}{\numberline {2}Dimensional Analysis}{15}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{15}{}%
+\contentsline {section}{\numberline {2.2}Classifications}{15}{}%
+\contentsline {section}{\numberline {2.3}Geometric Equations}{16}{}%
+\contentsline {subsection}{\numberline {2.3.1}Distance Between Two Points}{16}{}%
+\contentsline {subsection}{\numberline {2.3.2}Distance Between a Point and a Plane}{16}{}%
+\contentsline {subsection}{\numberline {2.3.3}Distance Between Two Parallel Lines}{16}{}%
+\contentsline {subsection}{\numberline {2.3.4}Distance Between a Point and a Line}{16}{}%
+\contentsline {subsection}{\numberline {2.3.5}Midpoint Formula}{16}{}%
+\contentsline {subsection}{\numberline {2.3.6}Equation of a Sphere}{16}{}%
+\contentsline {subsection}{\numberline {2.3.7}Equation of a Circle}{17}{}%
+\contentsline {subsection}{\numberline {2.3.8}General Quadratic Equation with two unknowns}{17}{}%
+\contentsline {subsection}{\numberline {2.3.9}Equation of an Ellipsoid}{17}{}%
+\contentsline {subsection}{\numberline {2.3.10}Equation of an Ellipse}{17}{}%
+\contentsline {subsection}{\numberline {2.3.11}Equation of a Hyperbola}{17}{}%
+\contentsline {subsection}{\numberline {2.3.12}Equation of a Parabola}{17}{}%
+\contentsline {subsection}{\numberline {2.3.13}Equations of a Line}{17}{}%
+\contentsline {subsubsection}{Parametric Form}{18}{}%
+\contentsline {subsubsection}{Normal Form}{18}{}%
+\contentsline {subsection}{\numberline {2.3.14}Equations of a Plane}{18}{}%
+\contentsline {subsubsection}{Point-Normal/Scalar Form}{18}{}%
+\contentsline {section}{\numberline {2.4}Quadric Surfaces}{18}{}%
+\contentsline {subsection}{\numberline {2.4.1}Ellipsoid}{18}{}%
+\contentsline {subsection}{\numberline {2.4.2}Hyperboloid of One Sheet}{18}{}%
+\contentsline {subsection}{\numberline {2.4.3}Hyperboloid of Two Sheets}{18}{}%
+\contentsline {subsection}{\numberline {2.4.4}Elliptic Cone}{19}{}%
+\contentsline {subsection}{\numberline {2.4.5}Elliptic Paraboloid}{19}{}%
+\contentsline {subsection}{\numberline {2.4.6}Hyperbolic Paraboloid}{19}{}%
+\contentsline {subsection}{\numberline {2.4.7}Describing Quadric Surfaces}{19}{}%
+\contentsline {subsubsection}{Example}{19}{}%
+\contentsline {section}{\numberline {2.5}Graphing Concepts}{20}{}%
+\contentsline {subsection}{\numberline {2.5.1}Functions of a Single Variable}{20}{}%
+\contentsline {subsection}{\numberline {2.5.2}Functions of Multiple Variables}{20}{}%
+\contentsline {section}{\numberline {2.6}Graphing Dimensions Summary}{22}{}%
+\contentsline {section}{\numberline {2.7}Parametrization}{23}{}%
+\contentsline {subsection}{\numberline {2.7.1}Parametrization of a Plane Line}{23}{}%
+\contentsline {subsection}{\numberline {2.7.2}Parametrization of a Circle}{23}{}%
+\contentsline {subsection}{\numberline {2.7.3}Parametrization of a Hyperbola}{23}{}%
+\contentsline {subsection}{\numberline {2.7.4}Parametrization of a Parabola}{23}{}%
+\contentsline {subsection}{\numberline {2.7.5}Parametrization of a Sphere}{24}{}%
+\contentsline {subsection}{\numberline {2.7.6}Examples}{25}{}%
+\contentsline {chapter}{\numberline {3}Functions of Several Variables}{26}{}%
+\contentsline {section}{\numberline {3.1}Continuity}{26}{}%
+\contentsline {section}{\numberline {3.2}Equations}{26}{}%
+\contentsline {subsection}{\numberline {3.2.1}Equations of a Tangent Plane}{26}{}%
+\contentsline {section}{\numberline {3.3}Finding the Tangent Plane}{27}{}%
+\contentsline {section}{\numberline {3.4}Finding Critical Points}{27}{}%
+\contentsline {section}{\numberline {3.5}y-x Convenience Domain}{28}{}%
+\contentsline {subsection}{\numberline {3.5.1}Examples}{28}{}%
+\contentsline {subsection}{\numberline {3.5.2}Why?}{29}{}%
+\contentsline {chapter}{\numberline {4}Partial Derivatives}{30}{}%
+\contentsline {section}{\numberline {4.1}Differentiability}{30}{}%
+\contentsline {section}{\numberline {4.2}Introduction}{30}{}%
+\contentsline {subsection}{\numberline {4.2.1}Differentials}{30}{}%
+\contentsline {subsubsection}{Error Estimation}{30}{}%
+\contentsline {subsubsection}{Example of Error Estimation}{31}{}%
+\contentsline {subsection}{\numberline {4.2.2}Derivatives}{31}{}%
+\contentsline {subsubsection}{Linearization}{31}{}%
+\contentsline {subsubsection}{Example of Linearization}{31}{}%
+\contentsline {section}{\numberline {4.3}Partial Derivatives}{32}{}%
+\contentsline {subsection}{\numberline {4.3.1}Partial Derivatives Definition}{32}{}%
+\contentsline {subsubsection}{Shortcut}{32}{}%
+\contentsline {subsection}{\numberline {4.3.2}All Defintions of First and Second Partial Derivatives}{32}{}%
+\contentsline {subsection}{\numberline {4.3.3}Properties of Partial Derivatives}{33}{}%
+\contentsline {subsubsection}{Total Differential}{33}{}%
+\contentsline {subsection}{\numberline {4.3.4}Higher-Order Partial Derivatives}{33}{}%
+\contentsline {section}{\numberline {4.4}Examples:}{34}{}%
+\contentsline {section}{\numberline {4.5}Chain Rule}{35}{}%
+\contentsline {subsection}{\numberline {4.5.1}Examples:}{36}{}%
+\contentsline {section}{\numberline {4.6}Second Derivative Test of Multiple Variables}{37}{}%
+\contentsline {subsection}{\numberline {4.6.1}Examples}{37}{}%
+\contentsline {section}{\numberline {4.7}Lagrange Multipliers}{38}{}%
+\contentsline {subsection}{\numberline {4.7.1}Examples}{39}{}%
+\contentsline {subsection}{\numberline {4.7.2}Shortcut}{40}{}%
+\contentsline {subsubsection}{Examples}{40}{}%
+\contentsline {chapter}{\numberline {5}Vector Calculus}{41}{}%
+\contentsline {section}{\numberline {5.1}Introduction to Vectors and Scalars}{41}{}%
+\contentsline {subsection}{\numberline {5.1.1}Vector Addition}{42}{}%
+\contentsline {subsection}{\numberline {5.1.2}Vector Scalar Multiplication}{42}{}%
+\contentsline {subsection}{\numberline {5.1.3}Scalar Multiples}{42}{}%
+\contentsline {section}{\numberline {5.2}Dot Product}{42}{}%
+\contentsline {subsection}{\numberline {5.2.1}Applications of the Dot Product}{43}{}%
+\contentsline {section}{\numberline {5.3}Cross Product}{44}{}%
+\contentsline {subsection}{\numberline {5.3.1}Shortcut for Cross Product}{44}{}%
+\contentsline {subsection}{\numberline {5.3.2}Applications of the Cross Product}{44}{}%
+\contentsline {section}{\numberline {5.4}Triple Scalar Product}{45}{}%
+\contentsline {section}{\numberline {5.5}Directional Derivatives}{45}{}%
+\contentsline {subsection}{\numberline {5.5.1}Definition}{45}{}%
+\contentsline {subsection}{\numberline {5.5.2}Shortcut Formula for Directional Derivative}{46}{}%
+\contentsline {subsection}{\numberline {5.5.3}Properties of Directional Derivatives}{46}{}%
+\contentsline {subsection}{\numberline {5.5.4}Examples}{47}{}%
+\contentsline {chapter}{\numberline {6}Multiple Integrals}{48}{}%
+\contentsline {section}{\numberline {6.1}Line Integral}{48}{}%
+\contentsline {subsection}{\numberline {6.1.1}Deriving the Line Integral}{48}{}%
+\contentsline {subsection}{\numberline {6.1.2}Examples}{49}{}%
+\contentsline {section}{\numberline {6.2}Multiple Integrals}{49}{}%
